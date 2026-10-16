@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "revision": "24e9045295e0e665fd6b825f3397bd3d4c4f5917",
+  "revision": "5a788e67a29109b330df7bc60139dea06dbb69e5",
   "census": {
-    "passed": 940,
+    "passed": 941,
     "total": 1046,
-    "percent": 89.8661567877629,
+    "percent": 89.96175908221797,
     "game_passed": 834,
     "game_total": 900,
     "error_classes": {
@@ -12,7 +12,7 @@
       "missing_declaration": 2,
       "pointer_width": 36,
       "syntax_or_semantics": 8,
-      "type_mismatch": 3,
+      "type_mismatch": 2,
       "unsupported_assembly": 9
     }
   },
@@ -112,7 +112,7 @@
         "measured": true,
         "summary": "15 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD 24e9045295e0 and dashboard policy",
+          "evidence report matches HEAD 5a788e67a291 and dashboard policy",
           "no executable check yet (15): portable-core/engine/host-build-and-tests, portable-core/vm/host-build-and-tests, portable-core/ui/host-build-and-tests, portable-core/gameplay/host-build-and-tests, portable-core/rendering/host-build-and-tests, portable-core/save/host-build-and-tests, portable-core/asset-loaders/host-build-and-tests, behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/ipc-audio-input-timing-persistence-replays"
         ],
         "closed": false
