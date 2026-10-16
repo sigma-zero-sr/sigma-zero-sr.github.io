@@ -1,0 +1,135 @@
+{
+  "schema": 1,
+  "revision": "62ef3f0cd4867c5b06e08b1e559e66deddb32100",
+  "census": {
+    "passed": 940,
+    "total": 1046,
+    "percent": 89.8661567877629,
+    "game_passed": 834,
+    "game_total": 900,
+    "error_classes": {
+      "layout_assertion": 48,
+      "missing_declaration": 2,
+      "pointer_width": 36,
+      "syntax_or_semantics": 8,
+      "type_mismatch": 3,
+      "unsupported_assembly": 9
+    }
+  },
+  "assets": {
+    "files": 6419,
+    "files_with_loader": 0,
+    "families": 16,
+    "families_with_loader": 0
+  },
+  "tasks": {
+    "arm7": {
+      "complete": 3,
+      "total": 6
+    },
+    "nitrofs": {
+      "complete": 8,
+      "total": 15
+    },
+    "port": {
+      "complete": 7,
+      "total": 9
+    }
+  },
+  "readiness": {
+    "done": false,
+    "areas": [
+      {
+        "id": "arm9",
+        "title": "ARM9 retail reconstruction",
+        "open": 63,
+        "measured": true,
+        "summary": "87.89% of code source-linked, 50 TUs open",
+        "details": [
+          "code not exact: 41,826 B in 160 functions",
+          "exact but not linked (its TU is incomplete): 33,660 B",
+          "incomplete TUs: 50",
+          "largest unmatched TUs: src/std/divmod_fp (6,160 B), src/game/snd_02005f04 (5,392 B), src/game/gap1e (4,840 B), src/game/postccarry_53bec (3,388 B), src/game/gap1a (2,696 B)",
+          "inline-asm bodies: 27 in 13 source files; .s files: 6 (src/core/sdk_overlay_digest.s, src/game/game_rodata.s, src/game/game_rodata_slow_entry.s, src/game/game_rodata_synthesis.s, src/game/game_rodata_tail.s, src/os/os_protection_unit.s)"
+        ],
+        "closed": false
+      },
+      {
+        "id": "binary-regions",
+        "title": "Registered binary regions (MobiClip codec, rodata code payloads)",
+        "open": 12,
+        "measured": true,
+        "summary": "12 regions excluded from the data denominator still need host replacements",
+        "details": [
+          "embedded-code-payload: 4,820 B",
+          "third-party-binary-code: 26,272 B",
+          "these stay retail bytes in the matching ROM; a native port needs a host replacement for each"
+        ],
+        "closed": false
+      },
+      {
+        "id": "arm7",
+        "title": "ARM7 binary",
+        "open": 1,
+        "measured": true,
+        "summary": "2,716 of 160,048 B recovered as exact source (1.70%)",
+        "details": [
+          "61 exact units in config/recovery/arm7_units.json",
+          "a port may replace ARM7 services instead of recovering them; see the port-arm7-host-services task"
+        ],
+        "closed": false
+      },
+      {
+        "id": "nitrofs",
+        "title": "NitroFS assets",
+        "open": 16,
+        "measured": true,
+        "summary": "0 of 6419 files have a portable loader; 16 format families open",
+        "details": [
+          "at6p-background: 5034 files, 53,826,326 B, at round-trip",
+          "sadl-stream: 9 files, 29,615,488 B, at classified",
+          "mobiclip-video: 82 files, 15,840,228 B, at decoded",
+          "sir0-sound-effect: 519 files, 11,182,368 B, at classified",
+          "sir0-bgm: 18 files, 6,462,144 B, at classified",
+          "sir0-data-other: 296 files, 4,922,128 B, at classified",
+          "at5p-model: 159 files, 2,916,279 B, at classified",
+          "sir0-script: 111 files, 2,629,152 B, at round-trip",
+          "sir0-field: 33 files, 237,008 B, at classified",
+          "sir0-data: 148 files, 87,616 B, at round-trip",
+          "unclassified: 2 files, 8,064 B, at unclassified",
+          "sir0-ini: 1 files, 6,368 B, at classified",
+          "raw-binary: 2 files, 2,624 B, at classified",
+          "sir0-cwindow-frame: 1 files, 1,264 B, at decoded",
+          "text-ini: 2 files, 438 B, at classified",
+          "filesystem-marker: 2 files, 18 B, at classified"
+        ],
+        "closed": false
+      },
+      {
+        "id": "host-evidence",
+        "title": "Portable core and behavioral suites",
+        "open": 15,
+        "measured": true,
+        "summary": "15 requirements have no check, 0 fail, 0 unproven",
+        "details": [
+          "evidence report matches HEAD 62ef3f0cd486 and dashboard policy",
+          "no executable check yet (15): portable-core/engine/host-build-and-tests, portable-core/vm/host-build-and-tests, portable-core/ui/host-build-and-tests, portable-core/gameplay/host-build-and-tests, portable-core/rendering/host-build-and-tests, portable-core/save/host-build-and-tests, portable-core/asset-loaders/host-build-and-tests, behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/ipc-audio-input-timing-persistence-replays"
+        ],
+        "closed": false
+      },
+      {
+        "id": "tasks",
+        "title": "Recovery task queues",
+        "open": 12,
+        "measured": true,
+        "summary": "12 tasks not complete across arm7, nitrofs, port",
+        "details": [
+          "arm7: 3/6 complete, 2 ready: arm7-runtime-exact-batch, arm7-sound-exact-batch",
+          "nitrofs: 8/15 complete, 6 ready: nitrofs-sir0-sound-effect-decoder, nitrofs-at5p-model-decoder, nitrofs-sadl-stream-decoder, nitrofs-sir0-bgm-decoder, nitrofs-sir0-field-decoder, nitrofs-at6p-portable-loader",
+          "port: 7/9 complete, 0 ready"
+        ],
+        "closed": false
+      }
+    ]
+  }
+}
