@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "d9a590320e2b60c9da3e8ef7718ab7e07d3a8dcb",
+  "revision": "91dd80774824fa05992ed2850d203bb3a5d23303",
   "census": {
     "passed": 1031,
     "total": 1046,
@@ -15,9 +15,9 @@
   },
   "assets": {
     "files": 6419,
-    "files_with_loader": 5034,
+    "files_with_loader": 5182,
     "families": 16,
-    "families_with_loader": 1
+    "families_with_loader": 2
   },
   "tasks": {
     "arm7": {
@@ -79,9 +79,9 @@
       {
         "id": "nitrofs",
         "title": "NitroFS assets",
-        "open": 15,
+        "open": 14,
         "measured": true,
-        "summary": "5034 of 6419 files have a portable loader; 15 format families open",
+        "summary": "5182 of 6419 files have a portable loader; 14 format families open",
         "details": [
           "sadl-stream: 9 files, 29,615,488 B, at classified",
           "mobiclip-video: 82 files, 15,840,228 B, at decoded",
@@ -91,7 +91,6 @@
           "at5p-model: 159 files, 2,916,279 B, at classified",
           "sir0-script: 111 files, 2,629,152 B, at round-trip",
           "sir0-field: 33 files, 237,008 B, at classified",
-          "sir0-data: 148 files, 87,616 B, at round-trip",
           "unclassified: 2 files, 8,064 B, at unclassified",
           "sir0-ini: 1 files, 6,368 B, at classified",
           "raw-binary: 2 files, 2,624 B, at classified",
@@ -108,7 +107,7 @@
         "measured": true,
         "summary": "15 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD d9a590320e2b and dashboard policy",
+          "evidence report matches HEAD 91dd80774824 and dashboard policy",
           "no executable check yet (15): portable-core/engine/host-build-and-tests, portable-core/vm/host-build-and-tests, portable-core/ui/host-build-and-tests, portable-core/gameplay/host-build-and-tests, portable-core/rendering/host-build-and-tests, portable-core/save/host-build-and-tests, portable-core/asset-loaders/host-build-and-tests, behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/ipc-audio-input-timing-persistence-replays"
         ],
         "closed": false
