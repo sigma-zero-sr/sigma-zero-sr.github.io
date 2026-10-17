@@ -1,16 +1,15 @@
 {
   "schema": 1,
-  "revision": "e3d1bab0fef99c24b4c57e7128e4bd5f749118cc",
+  "revision": "545c86fe28bcb31bf1004542d0954518efa43407",
   "census": {
-    "passed": 1000,
+    "passed": 1006,
     "total": 1046,
-    "percent": 95.60229445506693,
-    "game_passed": 884,
+    "percent": 96.17590822179731,
+    "game_passed": 889,
     "game_total": 900,
     "error_classes": {
       "pointer_width": 27,
-      "syntax_or_semantics": 9,
-      "type_mismatch": 1,
+      "syntax_or_semantics": 4,
       "unsupported_assembly": 9
     }
   },
@@ -110,7 +109,7 @@
         "measured": true,
         "summary": "15 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD e3d1bab0fef9 and dashboard policy",
+          "evidence report matches HEAD 545c86fe28bc and dashboard policy",
           "no executable check yet (15): portable-core/engine/host-build-and-tests, portable-core/vm/host-build-and-tests, portable-core/ui/host-build-and-tests, portable-core/gameplay/host-build-and-tests, portable-core/rendering/host-build-and-tests, portable-core/save/host-build-and-tests, portable-core/asset-loaders/host-build-and-tests, behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/ipc-audio-input-timing-persistence-replays"
         ],
         "closed": false
@@ -123,7 +122,7 @@
         "summary": "12 tasks not complete across arm7, nitrofs, port",
         "details": [
           "arm7: 3/6 complete, 2 ready: arm7-runtime-exact-batch, arm7-sound-exact-batch",
-          "nitrofs: 8/15 complete, 6 ready: nitrofs-sir0-sound-effect-decoder, nitrofs-at5p-model-decoder, nitrofs-sadl-stream-decoder, nitrofs-sir0-bgm-decoder, nitrofs-sir0-field-decoder, nitrofs-at6p-portable-loader",
+          "nitrofs: 8/15 complete, 5 ready: nitrofs-sir0-sound-effect-decoder, nitrofs-at5p-model-decoder, nitrofs-sadl-stream-decoder, nitrofs-sir0-bgm-decoder, nitrofs-sir0-field-decoder",
           "port: 7/9 complete, 0 ready"
         ],
         "closed": false
