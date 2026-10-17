@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "cdee3fff49ff46643893ed12c9e406151e7f49e4",
+  "revision": "23f072640993177b3921019faf7fdc98ec1447e8",
   "census": {
     "passed": 1031,
     "total": 1046,
@@ -15,9 +15,9 @@
   },
   "assets": {
     "files": 6419,
-    "files_with_loader": 0,
+    "files_with_loader": 5034,
     "families": 16,
-    "families_with_loader": 0
+    "families_with_loader": 1
   },
   "tasks": {
     "arm7": {
@@ -25,7 +25,7 @@
       "total": 6
     },
     "nitrofs": {
-      "complete": 8,
+      "complete": 9,
       "total": 15
     },
     "port": {
@@ -79,11 +79,10 @@
       {
         "id": "nitrofs",
         "title": "NitroFS assets",
-        "open": 16,
+        "open": 15,
         "measured": true,
-        "summary": "0 of 6419 files have a portable loader; 16 format families open",
+        "summary": "5034 of 6419 files have a portable loader; 15 format families open",
         "details": [
-          "at6p-background: 5034 files, 53,826,326 B, at round-trip",
           "sadl-stream: 9 files, 29,615,488 B, at classified",
           "mobiclip-video: 82 files, 15,840,228 B, at decoded",
           "sir0-sound-effect: 519 files, 11,182,368 B, at classified",
@@ -109,7 +108,7 @@
         "measured": true,
         "summary": "15 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD cdee3fff49ff and dashboard policy",
+          "evidence report matches HEAD 23f072640993 and dashboard policy",
           "no executable check yet (15): portable-core/engine/host-build-and-tests, portable-core/vm/host-build-and-tests, portable-core/ui/host-build-and-tests, portable-core/gameplay/host-build-and-tests, portable-core/rendering/host-build-and-tests, portable-core/save/host-build-and-tests, portable-core/asset-loaders/host-build-and-tests, behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/ipc-audio-input-timing-persistence-replays"
         ],
         "closed": false
@@ -117,12 +116,12 @@
       {
         "id": "tasks",
         "title": "Recovery task queues",
-        "open": 12,
+        "open": 11,
         "measured": true,
-        "summary": "12 tasks not complete across arm7, nitrofs, port",
+        "summary": "11 tasks not complete across arm7, nitrofs, port",
         "details": [
           "arm7: 3/6 complete, 2 ready: arm7-runtime-exact-batch, arm7-sound-exact-batch",
-          "nitrofs: 8/15 complete, 5 ready: nitrofs-sir0-sound-effect-decoder, nitrofs-at5p-model-decoder, nitrofs-sadl-stream-decoder, nitrofs-sir0-bgm-decoder, nitrofs-sir0-field-decoder",
+          "nitrofs: 9/15 complete, 5 ready: nitrofs-sir0-sound-effect-decoder, nitrofs-at5p-model-decoder, nitrofs-sadl-stream-decoder, nitrofs-sir0-bgm-decoder, nitrofs-sir0-field-decoder",
           "port: 7/9 complete, 0 ready"
         ],
         "closed": false
