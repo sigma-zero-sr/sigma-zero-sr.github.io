@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "9bf559d498170ff8ab2e3a0dd92485f32b0979be",
+  "revision": "5de8d45014bc3cd405c8117270ab6e7d851cecaa",
   "census": {
     "passed": 1031,
     "total": 1046,
@@ -21,7 +21,7 @@
   },
   "tasks": {
     "arm7": {
-      "complete": 3,
+      "complete": 4,
       "total": 6
     },
     "nitrofs": {
@@ -47,7 +47,7 @@
       "real": 9,
       "unresolved": 0
     },
-    "elapsed_s": 0.11,
+    "elapsed_s": 0.07,
     "outcome": "sanitizer",
     "milestones": [
       "reset",
@@ -141,7 +141,7 @@
         "measured": true,
         "summary": "15 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD 9bf559d49817 and dashboard policy",
+          "evidence report matches HEAD 5de8d45014bc and dashboard policy",
           "no executable check yet (15): portable-core/engine/host-build-and-tests, portable-core/vm/host-build-and-tests, portable-core/ui/host-build-and-tests, portable-core/gameplay/host-build-and-tests, portable-core/rendering/host-build-and-tests, portable-core/save/host-build-and-tests, portable-core/asset-loaders/host-build-and-tests, behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/ipc-audio-input-timing-persistence-replays"
         ],
         "closed": false
@@ -149,13 +149,13 @@
       {
         "id": "tasks",
         "title": "Recovery task queues",
-        "open": 11,
+        "open": 10,
         "measured": true,
-        "summary": "11 tasks not complete across arm7, nitrofs, port",
+        "summary": "10 tasks not complete across arm7, nitrofs, port",
         "details": [
-          "arm7: 3/6 complete, 1 ready: arm7-sound-exact-batch",
-          "nitrofs: 9/15 complete, 4 ready: nitrofs-sir0-data-other-decoder, nitrofs-at5p-model-decoder, nitrofs-sir0-bgm-decoder, nitrofs-sir0-field-decoder",
-          "port: 7/9 complete, 0 ready"
+          "arm7: 4/6 complete, 2 ready: arm7-runtime-exact-batch, arm7-sound-exact-batch",
+          "nitrofs: 9/15 complete, 5 ready: nitrofs-sir0-sound-effect-decoder, nitrofs-sir0-data-other-decoder, nitrofs-at5p-model-decoder, nitrofs-sir0-bgm-decoder, nitrofs-sir0-field-decoder",
+          "port: 7/9 complete, 1 ready: port-arm7-host-services"
         ],
         "closed": false
       }
