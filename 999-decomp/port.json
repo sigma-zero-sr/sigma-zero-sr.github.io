@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "d77c9856b9debe18dcf29444217ef08f85e8f0b3",
+  "revision": "9bf559d498170ff8ab2e3a0dd92485f32b0979be",
   "census": {
     "passed": 1031,
     "total": 1046,
@@ -47,7 +47,7 @@
       "real": 9,
       "unresolved": 0
     },
-    "elapsed_s": 0.09,
+    "elapsed_s": 0.11,
     "outcome": "sanitizer",
     "milestones": [
       "reset",
@@ -62,11 +62,10 @@
     "stubs_hit": 25,
     "first_stub_hit": "FS_Init",
     "failure": {
-      "sanitizer": "UndefinedBehaviorSanitizer",
-      "class": "misaligned-pointer-use",
-      "symbol": "func_0200ad10",
-      "location": "src/game/hole2_02009e44.cpp:1111",
-      "message": "load of misaligned address 0x000000000019 for type 'const s16' (aka 'const short'), which requires 2 byte alignment"
+      "sanitizer": "AddressSanitizer",
+      "class": "SEGV",
+      "symbol": "initializeConfig",
+      "location": "src/game/func_0200f7f8.cpp:401"
     },
     "frames": 0,
     "frames_reported": false
@@ -142,7 +141,7 @@
         "measured": true,
         "summary": "15 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD d77c9856b9de and dashboard policy",
+          "evidence report matches HEAD 9bf559d49817 and dashboard policy",
           "no executable check yet (15): portable-core/engine/host-build-and-tests, portable-core/vm/host-build-and-tests, portable-core/ui/host-build-and-tests, portable-core/gameplay/host-build-and-tests, portable-core/rendering/host-build-and-tests, portable-core/save/host-build-and-tests, portable-core/asset-loaders/host-build-and-tests, behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/ipc-audio-input-timing-persistence-replays"
         ],
         "closed": false
@@ -154,8 +153,8 @@
         "measured": true,
         "summary": "11 tasks not complete across arm7, nitrofs, port",
         "details": [
-          "arm7: 3/6 complete, 2 ready: arm7-runtime-exact-batch, arm7-sound-exact-batch",
-          "nitrofs: 9/15 complete, 4 ready: nitrofs-sir0-sound-effect-decoder, nitrofs-sir0-data-other-decoder, nitrofs-sir0-bgm-decoder, nitrofs-sir0-field-decoder",
+          "arm7: 3/6 complete, 1 ready: arm7-sound-exact-batch",
+          "nitrofs: 9/15 complete, 4 ready: nitrofs-sir0-data-other-decoder, nitrofs-at5p-model-decoder, nitrofs-sir0-bgm-decoder, nitrofs-sir0-field-decoder",
           "port: 7/9 complete, 0 ready"
         ],
         "closed": false
