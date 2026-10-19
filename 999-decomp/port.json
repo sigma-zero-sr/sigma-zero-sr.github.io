@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "8da67a475cc416e991e23740befa8029257643d0",
+  "revision": "e00a9bd9ae5977580c99f348ae6ea9e65337d3e8",
   "census": {
     "passed": 1031,
     "total": 1046,
@@ -47,7 +47,7 @@
       "real": 9,
       "unresolved": 0
     },
-    "elapsed_s": 0.07,
+    "elapsed_s": 0.12,
     "outcome": "sanitizer",
     "milestones": [
       "reset",
@@ -61,17 +61,20 @@
       "cmeta-constructed",
       "flag-initialized",
       "total-item-constructed",
-      "total-chara-constructed"
+      "total-chara-constructed",
+      "carry-item-constructed",
+      "guide-constructed",
+      "question-constructed"
     ],
-    "last_milestone": "total-chara-constructed",
-    "stubs_hit": 26,
+    "last_milestone": "question-constructed",
+    "stubs_hit": 25,
     "first_stub_hit": "FS_Init",
     "failure": {
       "sanitizer": "UndefinedBehaviorSanitizer",
       "class": "misaligned-pointer-use",
-      "symbol": "func_020302a4",
-      "location": "src/game/vmscript_30218.cpp:116",
-      "message": "member access within misaligned address 0x59dccd5b3dac for type 'ScriptState02030218', which requires 8 byte alignment"
+      "symbol": "func_0204df44",
+      "location": "src/game/postccarry_df44.cpp:105",
+      "message": "store to misaligned address 0x5819fd649fa4 for type 'void *', which requires 8 byte alignment"
     },
     "frames": 0,
     "frames_reported": false
@@ -146,7 +149,7 @@
         "measured": true,
         "summary": "15 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD 8da67a475cc4 and dashboard policy",
+          "evidence report matches HEAD e00a9bd9ae59 and dashboard policy",
           "no executable check yet (15): portable-core/engine/host-build-and-tests, portable-core/vm/host-build-and-tests, portable-core/ui/host-build-and-tests, portable-core/gameplay/host-build-and-tests, portable-core/rendering/host-build-and-tests, portable-core/save/host-build-and-tests, portable-core/asset-loaders/host-build-and-tests, behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/ipc-audio-input-timing-persistence-replays"
         ],
         "closed": false
