@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "578f0b052eba759077798a5e3a45fecd7b6eb0a2",
+  "revision": "1c817a19a38465780178cf64f06ff337b5b75782",
   "census": {
     "passed": 1031,
     "total": 1046,
@@ -41,13 +41,13 @@
     "undefined_names": 0,
     "stubs": {
       "registered": 1695,
-      "generated": 1689,
-      "generated_functions": 219,
-      "generated_data": 1470,
-      "real": 6,
+      "generated": 1686,
+      "generated_functions": 217,
+      "generated_data": 1469,
+      "real": 9,
       "unresolved": 0
     },
-    "elapsed_s": 0.1,
+    "elapsed_s": 0.08,
     "outcome": "sanitizer",
     "milestones": [
       "reset",
@@ -59,13 +59,14 @@
       "application-enter"
     ],
     "last_milestone": "application-enter",
-    "stubs_hit": 26,
+    "stubs_hit": 25,
     "first_stub_hit": "FS_Init",
     "failure": {
-      "sanitizer": "AddressSanitizer",
-      "class": "stack-buffer-overflow",
-      "symbol": "func_0206aa38",
-      "location": "src/game/hole665c8_tail.cpp:88"
+      "sanitizer": "UndefinedBehaviorSanitizer",
+      "class": "misaligned-pointer-use",
+      "symbol": "func_0200ad10",
+      "location": "src/game/hole2_02009e44.cpp:1111",
+      "message": "load of misaligned address 0x000000000019 for type 'const s16' (aka 'const short'), which requires 2 byte alignment"
     },
     "frames": 0,
     "frames_reported": false
@@ -143,7 +144,7 @@
         "measured": true,
         "summary": "15 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD 578f0b052eba and dashboard policy",
+          "evidence report matches HEAD 1c817a19a384 and dashboard policy",
           "no executable check yet (15): portable-core/engine/host-build-and-tests, portable-core/vm/host-build-and-tests, portable-core/ui/host-build-and-tests, portable-core/gameplay/host-build-and-tests, portable-core/rendering/host-build-and-tests, portable-core/save/host-build-and-tests, portable-core/asset-loaders/host-build-and-tests, behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/ipc-audio-input-timing-persistence-replays"
         ],
         "closed": false
