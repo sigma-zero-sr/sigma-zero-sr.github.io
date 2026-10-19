@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "c1b7bbe8c8296419cb590316fe04baf7dcc963d9",
+  "revision": "d77c9856b9debe18dcf29444217ef08f85e8f0b3",
   "census": {
     "passed": 1031,
     "total": 1046,
@@ -15,9 +15,9 @@
   },
   "assets": {
     "files": 6419,
-    "files_with_loader": 5184,
+    "files_with_loader": 5186,
     "families": 16,
-    "families_with_loader": 4
+    "families_with_loader": 5
   },
   "tasks": {
     "arm7": {
@@ -47,7 +47,7 @@
       "real": 9,
       "unresolved": 0
     },
-    "elapsed_s": 0.12,
+    "elapsed_s": 0.09,
     "outcome": "sanitizer",
     "milestones": [
       "reset",
@@ -117,9 +117,9 @@
       {
         "id": "nitrofs",
         "title": "NitroFS assets",
-        "open": 12,
+        "open": 11,
         "measured": true,
-        "summary": "5184 of 6419 files have a portable loader; 12 format families open",
+        "summary": "5186 of 6419 files have a portable loader; 11 format families open",
         "details": [
           "sadl-stream: 9 files, 29,615,488 B, at classified",
           "mobiclip-video: 82 files, 15,840,228 B, at decoded",
@@ -131,7 +131,6 @@
           "sir0-field: 33 files, 237,008 B, at classified",
           "unclassified: 2 files, 8,064 B, at unclassified",
           "raw-binary: 2 files, 2,624 B, at classified",
-          "text-ini: 2 files, 438 B, at classified",
           "filesystem-marker: 2 files, 18 B, at classified"
         ],
         "closed": false
@@ -143,7 +142,7 @@
         "measured": true,
         "summary": "15 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD c1b7bbe8c829 and dashboard policy",
+          "evidence report matches HEAD d77c9856b9de and dashboard policy",
           "no executable check yet (15): portable-core/engine/host-build-and-tests, portable-core/vm/host-build-and-tests, portable-core/ui/host-build-and-tests, portable-core/gameplay/host-build-and-tests, portable-core/rendering/host-build-and-tests, portable-core/save/host-build-and-tests, portable-core/asset-loaders/host-build-and-tests, behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/ipc-audio-input-timing-persistence-replays"
         ],
         "closed": false
@@ -156,7 +155,7 @@
         "summary": "11 tasks not complete across arm7, nitrofs, port",
         "details": [
           "arm7: 3/6 complete, 2 ready: arm7-runtime-exact-batch, arm7-sound-exact-batch",
-          "nitrofs: 9/15 complete, 3 ready: nitrofs-sir0-sound-effect-decoder, nitrofs-sir0-bgm-decoder, nitrofs-sir0-field-decoder",
+          "nitrofs: 9/15 complete, 4 ready: nitrofs-sir0-sound-effect-decoder, nitrofs-sir0-data-other-decoder, nitrofs-sir0-bgm-decoder, nitrofs-sir0-field-decoder",
           "port: 7/9 complete, 0 ready"
         ],
         "closed": false
