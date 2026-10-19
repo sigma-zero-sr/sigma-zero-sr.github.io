@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "19adbbb0a67701ec642948c641e0d645b1f5c0d5",
+  "revision": "578f0b052eba759077798a5e3a45fecd7b6eb0a2",
   "census": {
     "passed": 1031,
     "total": 1046,
@@ -32,6 +32,43 @@
       "complete": 7,
       "total": 9
     }
+  },
+  "boot": {
+    "status": "ran",
+    "timeout_s": 60.0,
+    "compiler": "clang",
+    "links": true,
+    "undefined_names": 0,
+    "stubs": {
+      "registered": 1695,
+      "generated": 1689,
+      "generated_functions": 219,
+      "generated_data": 1470,
+      "real": 6,
+      "unresolved": 0
+    },
+    "elapsed_s": 0.1,
+    "outcome": "sanitizer",
+    "milestones": [
+      "reset",
+      "initialization-enter",
+      "initialization-return",
+      "display-return",
+      "3d-return",
+      "seed-return",
+      "application-enter"
+    ],
+    "last_milestone": "application-enter",
+    "stubs_hit": 26,
+    "first_stub_hit": "FS_Init",
+    "failure": {
+      "sanitizer": "AddressSanitizer",
+      "class": "stack-buffer-overflow",
+      "symbol": "func_0206aa38",
+      "location": "src/game/hole665c8_tail.cpp:88"
+    },
+    "frames": 0,
+    "frames_reported": false
   },
   "readiness": {
     "done": false,
@@ -106,7 +143,7 @@
         "measured": true,
         "summary": "15 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD 19adbbb0a677 and dashboard policy",
+          "evidence report matches HEAD 578f0b052eba and dashboard policy",
           "no executable check yet (15): portable-core/engine/host-build-and-tests, portable-core/vm/host-build-and-tests, portable-core/ui/host-build-and-tests, portable-core/gameplay/host-build-and-tests, portable-core/rendering/host-build-and-tests, portable-core/save/host-build-and-tests, portable-core/asset-loaders/host-build-and-tests, behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/ipc-audio-input-timing-persistence-replays"
         ],
         "closed": false
@@ -119,7 +156,7 @@
         "summary": "11 tasks not complete across arm7, nitrofs, port",
         "details": [
           "arm7: 3/6 complete, 2 ready: arm7-runtime-exact-batch, arm7-sound-exact-batch",
-          "nitrofs: 9/15 complete, 5 ready: nitrofs-sir0-sound-effect-decoder, nitrofs-at5p-model-decoder, nitrofs-sadl-stream-decoder, nitrofs-sir0-bgm-decoder, nitrofs-sir0-field-decoder",
+          "nitrofs: 9/15 complete, 3 ready: nitrofs-sir0-sound-effect-decoder, nitrofs-sir0-bgm-decoder, nitrofs-sir0-field-decoder",
           "port: 7/9 complete, 0 ready"
         ],
         "closed": false
