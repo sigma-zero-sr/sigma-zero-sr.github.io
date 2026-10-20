@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "a7bc95ff264a0939903d1de7ca5363dd1040802d",
+  "revision": "76664e526a727d5761ef4c5e4ae5dd12088988a4",
   "census": {
     "passed": 1033,
     "total": 1046,
@@ -137,12 +137,12 @@
         "title": "ARM9 retail reconstruction",
         "open": 46,
         "measured": true,
-        "summary": "90.18% of code closed for the port (54 functions host-replaced), 46 TUs open",
+        "summary": "90.18% of code closed for the port (55 functions host-replaced), 46 TUs open",
         "details": [
           "source-linked (complete TUs): 547,896 of 623,382 B (87.89%)",
           "code not exact: 39,226 B in 159 functions",
           "exact semantic code in TUs still open: 32,612 B",
-          "host-replaced asm/veneer functions: 54 (11,120 B)",
+          "host-replaced asm/veneer functions: 55 (11,148 B)",
           "TUs open for the port: 46",
           "registered replacements not proven (1): __throw (cxx-native-rethrow: ctest cxx_rethrow is not registered in the default host configuration)",
           "largest open TUs (B not covered): src/game/snd_02005f04 (5,392 B), src/game/postccarry_53bec (3,388 B), src/game/gap1a (2,696 B), src/game/func_02011584 (2,448 B), src/game/gap1e (2,240 B)",
@@ -219,7 +219,7 @@
         "measured": true,
         "summary": "15 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD a7bc95ff264a and dashboard policy",
+          "evidence report matches HEAD 76664e526a72 and dashboard policy",
           "no executable check yet (15): portable-core/engine/host-build-and-tests, portable-core/vm/host-build-and-tests, portable-core/ui/host-build-and-tests, portable-core/gameplay/host-build-and-tests, portable-core/rendering/host-build-and-tests, portable-core/save/host-build-and-tests, portable-core/asset-loaders/host-build-and-tests, behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior"
         ],
         "done": 13,
