@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "37e92a13694b357506ac326e5df62356afba6b92",
+  "revision": "f148225d7dcab3ade8569ef0fc8eaf17c54bd811",
   "census": {
     "passed": 1033,
     "total": 1046,
@@ -46,7 +46,7 @@
       "real": 18,
       "unresolved": 0
     },
-    "elapsed_s": 0.05,
+    "elapsed_s": 0.07,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -118,6 +118,9 @@
       "game-service-save-error-question-text-absent",
       "game-service-save-error-transition-completed",
       "game-service-save-error-save-screen-allocation-reached",
+      "game-service-save-error-save-screen-constructed",
+      "game-service-save-screen-first-event20-enter",
+      "game-service-save-screen-first-event20-completed",
       "game-service-loop-unavailable",
       "application-return"
     ],
@@ -198,7 +201,7 @@
         "measured": true,
         "summary": "15 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD 37e92a13694b and dashboard policy",
+          "evidence report matches HEAD f148225d7dca and dashboard policy",
           "no executable check yet (15): portable-core/engine/host-build-and-tests, portable-core/vm/host-build-and-tests, portable-core/ui/host-build-and-tests, portable-core/gameplay/host-build-and-tests, portable-core/rendering/host-build-and-tests, portable-core/save/host-build-and-tests, portable-core/asset-loaders/host-build-and-tests, behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior"
         ],
         "closed": false
