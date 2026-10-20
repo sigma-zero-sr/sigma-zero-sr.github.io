@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "2b395249ebf8b7227734521aae57fbddc57ff45e",
+  "revision": "417423b470f962e34862c57ccf9482a06091f1c0",
   "census": {
     "passed": 1033,
     "total": 1046,
@@ -46,7 +46,7 @@
       "real": 18,
       "unresolved": 0
     },
-    "elapsed_s": 0.02,
+    "elapsed_s": 0.01,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -101,46 +101,63 @@
   },
   "readiness": {
     "done": false,
+    "percent": 54.03,
     "areas": [
       {
         "id": "arm9",
         "title": "ARM9 retail reconstruction",
-        "open": 63,
+        "open": 46,
         "measured": true,
-        "summary": "87.89% of code source-linked, 50 TUs open",
+        "summary": "90.18% of code closed for the port (51 functions host-replaced), 46 TUs open",
         "details": [
+          "source-linked (complete TUs): 547,896 of 623,382 B (87.89%)",
           "code not exact: 39,226 B in 159 functions",
-          "exact but not linked (its TU is incomplete): 36,260 B",
-          "incomplete TUs: 50",
-          "largest unmatched TUs: src/std/divmod_fp (6,160 B), src/game/snd_02005f04 (5,392 B), src/game/postccarry_53bec (3,388 B), src/game/gap1a (2,696 B), src/std/daddsubmul (2,608 B)",
+          "exact semantic code in TUs still open: 32,612 B",
+          "host-replaced asm/veneer functions: 51 (11,016 B)",
+          "TUs open for the port: 46",
+          "registered replacements not proven (2): OS_DisableInterrupts (host-os-interrupts: ctest host_os_runtime is not registered in the default host configuration), OS_RestoreInterrupts (host-os-interrupts: ctest host_os_runtime is not registered in the default host configuration)",
+          "largest open TUs (B not covered): src/game/snd_02005f04 (5,392 B), src/game/postccarry_53bec (3,388 B), src/game/gap1a (2,696 B), src/game/func_02011584 (2,448 B), src/game/gap1e (2,240 B)",
           "inline-asm bodies: 27 in 13 source files; .s files: 6 (src/core/sdk_overlay_digest.s, src/game/game_rodata.s, src/game/game_rodata_slow_entry.s, src/game/game_rodata_synthesis.s, src/game/game_rodata_tail.s, src/os/os_protection_unit.s)"
         ],
-        "closed": false
+        "done": 562142,
+        "total": 623382,
+        "unit": "bytes",
+        "closed": false,
+        "percent": 90.18
       },
       {
         "id": "binary-regions",
         "title": "Registered binary regions (MobiClip codec, rodata code payloads)",
-        "open": 12,
+        "open": 8,
         "measured": true,
-        "summary": "12 regions excluded from the data denominator still need host replacements",
+        "summary": "4 of 12 regions host-replaced; 8 still need host replacements",
         "details": [
-          "embedded-code-payload: 4,820 B",
-          "third-party-binary-code: 26,272 B",
+          "third-party-binary-code: 26,272 B open",
+          "host-replaced: 4 of 12 regions (4,820 of 31,092 B)",
           "these stay retail bytes in the matching ROM; a native port needs a host replacement for each"
         ],
-        "closed": false
+        "done": 4,
+        "total": 12,
+        "unit": "regions",
+        "closed": false,
+        "percent": 33.33
       },
       {
         "id": "arm7",
         "title": "ARM7 binary",
         "open": 1,
         "measured": true,
-        "summary": "2,716 of 160,048 B recovered as exact source (1.70%)",
+        "summary": "2,716 of 160,048 B recovered as exact source (1.70%); host-service route 1 of 2 requirements proven",
         "details": [
           "61 exact units in config/recovery/arm7_units.json",
-          "a port may replace ARM7 services instead of recovering them; see the port-arm7-host-services task"
+          "closes through exact source for every byte or through the typed ARM7 host-service route (docs/recovery/arm7/HOST_SERVICES.md, tests/arm7/check_host_services.py)",
+          "host-service requirements not proven: game-sdk-bindings-and-required-arm7-behavior"
         ],
-        "closed": false
+        "done": 2716,
+        "total": 160048,
+        "unit": "bytes",
+        "closed": false,
+        "percent": 1.7
       },
       {
         "id": "nitrofs",
@@ -160,7 +177,11 @@
           "raw-binary: 2 files, 2,624 B, at classified",
           "filesystem-marker: 2 files, 18 B, at classified"
         ],
-        "closed": false
+        "done": 5297,
+        "total": 6419,
+        "unit": "files",
+        "closed": false,
+        "percent": 82.52
       },
       {
         "id": "host-evidence",
@@ -169,10 +190,14 @@
         "measured": true,
         "summary": "15 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD 2b395249ebf8 and dashboard policy",
+          "evidence report matches HEAD 417423b470f9 and dashboard policy",
           "no executable check yet (15): portable-core/engine/host-build-and-tests, portable-core/vm/host-build-and-tests, portable-core/ui/host-build-and-tests, portable-core/gameplay/host-build-and-tests, portable-core/rendering/host-build-and-tests, portable-core/save/host-build-and-tests, portable-core/asset-loaders/host-build-and-tests, behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior"
         ],
-        "closed": false
+        "done": 13,
+        "total": 28,
+        "unit": "requirements",
+        "closed": false,
+        "percent": 46.43
       },
       {
         "id": "tasks",
@@ -185,7 +210,11 @@
           "nitrofs: 9/15 complete, 6 ready: nitrofs-sir0-sound-effect-decoder, nitrofs-sir0-data-other-decoder, nitrofs-at5p-model-decoder, nitrofs-sadl-stream-decoder, nitrofs-sir0-bgm-decoder, nitrofs-sir0-field-decoder",
           "port: 8/9 complete, 0 ready"
         ],
-        "closed": false
+        "done": 21,
+        "total": 30,
+        "unit": "tasks",
+        "closed": false,
+        "percent": 70.0
       }
     ]
   }
