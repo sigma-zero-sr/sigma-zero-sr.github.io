@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "22f0d089217a3ded1b3ce9500647767c3093cfc2",
+  "revision": "7af0b0de7806680d2e51deee84ddb7daa7b76f1f",
   "census": {
     "passed": 1033,
     "total": 1046,
@@ -46,7 +46,7 @@
       "real": 18,
       "unresolved": 0
     },
-    "elapsed_s": 10.09,
+    "elapsed_s": 10.1,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -134,20 +134,21 @@
   },
   "readiness": {
     "done": false,
-    "percent": 54.03,
+    "percent": 48.47,
     "areas": [
       {
         "id": "arm9",
         "title": "ARM9 retail reconstruction",
         "open": 46,
         "measured": true,
-        "summary": "90.18% of code closed for the port (56 functions host-replaced), 46 TUs open",
+        "summary": "90.18% of code closed for the port (44 functions host-replaced), 46 TUs open",
         "details": [
           "source-linked (complete TUs): 547,896 of 623,382 B (87.89%)",
           "code not exact: 39,226 B in 159 functions",
           "exact semantic code in TUs still open: 32,612 B",
-          "host-replaced asm/veneer functions: 56 (11,224 B)",
+          "host-replaced asm_walls functions: 44 (11,174 B)",
           "TUs open for the port: 46",
+          "registered replacements not proven (12): CpuFastSet (bios-services: not an asm_walls row), LZ77UnCompReadByCallbackWrite16bit (bios-services: not an asm_walls row), BitUnPack (bios-services: not an asm_walls row), Sqrt (bios-services: not an asm_walls row), LZ77UnCompReadNormalWrite8bit (bios-services: not an asm_walls row), RLUnCompReadByCallbackWrite16bit (bios-services: not an asm_walls row), CpuSet (bios-services: not an asm_walls row), Div (bios-services: not an asm_walls row), +4 more",
           "largest open TUs (B not covered): src/game/snd_02005f04 (5,392 B), src/game/postccarry_53bec (3,388 B), src/game/gap1a (2,696 B), src/game/func_02011584 (2,448 B), src/game/gap1e (2,240 B)",
           "inline-asm bodies: 27 in 13 source files; .s files: 6 (src/core/sdk_overlay_digest.s, src/game/game_rodata.s, src/game/game_rodata_slow_entry.s, src/game/game_rodata_synthesis.s, src/game/game_rodata_tail.s, src/os/os_protection_unit.s)"
         ],
@@ -160,19 +161,21 @@
       {
         "id": "binary-regions",
         "title": "Registered binary regions (MobiClip codec, rodata code payloads)",
-        "open": 8,
+        "open": 12,
         "measured": true,
-        "summary": "4 of 12 regions host-replaced; 8 still need host replacements",
+        "summary": "0 of 12 regions host-replaced; 12 still need host replacements",
         "details": [
+          "embedded-code-payload: 4,820 B open",
           "third-party-binary-code: 26,272 B open",
-          "host-replaced: 4 of 12 regions (4,820 of 31,092 B)",
+          "host-replaced: 0 of 12 regions (0 of 31,092 B)",
+          "registered replacements not proven: src/game/game_rodata.s (coding1-audio: no game_entry: the game's caller path still reaches the retail bytes (a standalone decoder does not retire the region)), src/game/game_rodata_tail.s (fastaudio: no game_entry: the game's caller path still reaches the retail bytes (a standalone decoder does not retire the region)), src/game/game_rodata_synthesis.s (fastaudio: no game_entry: the game's caller path still reaches the retail bytes (a standalone decoder does not retire the region)), src/game/game_rodata_slow_entry.s (fastaudio: no game_entry: the game's caller path still reaches the retail bytes (a standalone decoder does not retire the region))",
           "these stay retail bytes in the matching ROM; a native port needs a host replacement for each"
         ],
-        "done": 4,
+        "done": 0,
         "total": 12,
         "unit": "regions",
         "closed": false,
-        "percent": 33.33
+        "percent": 0.0
       },
       {
         "id": "arm7",
@@ -222,7 +225,7 @@
         "measured": true,
         "summary": "15 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD 22f0d089217a and dashboard policy",
+          "evidence report matches HEAD 7af0b0de7806 and dashboard policy",
           "no executable check yet (15): portable-core/engine/host-build-and-tests, portable-core/vm/host-build-and-tests, portable-core/ui/host-build-and-tests, portable-core/gameplay/host-build-and-tests, portable-core/rendering/host-build-and-tests, portable-core/save/host-build-and-tests, portable-core/asset-loaders/host-build-and-tests, behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior"
         ],
         "done": 13,
