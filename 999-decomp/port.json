@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "b99441ed8acf248743a7388e528d71432466c39a",
+  "revision": "5e6628d59b3674b1c8370fff3f39f4b860540d1d",
   "census": {
     "passed": 1033,
     "total": 1046,
@@ -46,7 +46,7 @@
       "real": 19,
       "unresolved": 0
     },
-    "elapsed_s": 12.51,
+    "elapsed_s": 11.64,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -101,6 +101,7 @@
       "render-initialization-unavailable",
       "system-object-main-projection-prepared",
       "system-object-main-palette-prepared",
+      "guide-input-metadata-prepared",
       "optional-system-object-caller-retired",
       "text-pool-decoded",
       "game-data-decoded",
@@ -111,12 +112,14 @@
       "sprite-h-mode-set",
       "epu-common-image-decoded",
       "search-local-state-constructed",
-      "game-entry-unavailable",
+      "game-entry-completed",
       "game-service-local-setup-completed",
       "game-service-room-text-initialized",
       "game-service-event16-completed",
       "optional-save-deferred-first-frame",
+      "game-end-completed",
       "epu-start-primary-image-decoded",
+      "meta-mapin-event-prepared",
       "start-mapin-metadata-resolved",
       "main-loop-entered",
       "first-frame-presented",
@@ -124,7 +127,7 @@
       "application-return"
     ],
     "last_milestone": "application-return",
-    "milestones_reached": 73,
+    "milestones_reached": 76,
     "furthest_milestone": "600-frames-presented",
     "stop_at": null,
     "stop_chain": [],
@@ -227,7 +230,7 @@
         "measured": true,
         "summary": "12 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD b99441ed8acf and dashboard policy",
+          "evidence report matches HEAD 5e6628d59b36 and dashboard policy",
           "no executable check yet (12): portable-core/engine/host-build-and-tests, portable-core/ui/host-build-and-tests, portable-core/rendering/host-build-and-tests, portable-core/asset-loaders/host-build-and-tests, behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior"
         ],
         "done": 16,
