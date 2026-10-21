@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "b87a129ed58db043d95d7a15633dd9025140e97b",
+  "revision": "87e6650b5d08d8b765a861568dc56dc04bc967cb",
   "census": {
     "passed": 1033,
     "total": 1046,
@@ -39,14 +39,14 @@
     "links": true,
     "undefined_names": 0,
     "stubs": {
-      "registered": 1696,
-      "generated": 1678,
-      "generated_functions": 212,
+      "registered": 1694,
+      "generated": 1676,
+      "generated_functions": 210,
       "generated_data": 1466,
       "real": 18,
       "unresolved": 0
     },
-    "elapsed_s": 11.81,
+    "elapsed_s": 11.74,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -136,7 +136,7 @@
   },
   "readiness": {
     "done": false,
-    "percent": 53.4,
+    "percent": 58.96,
     "areas": [
       {
         "id": "arm9",
@@ -163,21 +163,19 @@
       {
         "id": "binary-regions",
         "title": "Registered binary regions (MobiClip codec, rodata code payloads)",
-        "open": 12,
+        "open": 8,
         "measured": true,
-        "summary": "0 of 12 regions host-replaced; 12 still need host replacements",
+        "summary": "4 of 12 regions host-replaced; 8 still need host replacements",
         "details": [
-          "embedded-code-payload: 4,820 B open",
           "third-party-binary-code: 26,272 B open",
-          "host-replaced: 0 of 12 regions (0 of 31,092 B)",
-          "registered replacements not proven: src/game/game_rodata.s (coding1-audio: no game_entry: the game's caller path still reaches the retail bytes (a standalone decoder does not retire the region)), src/game/game_rodata_tail.s (fastaudio: no game_entry: the game's caller path still reaches the retail bytes (a standalone decoder does not retire the region)), src/game/game_rodata_synthesis.s (fastaudio: no game_entry: the game's caller path still reaches the retail bytes (a standalone decoder does not retire the region)), src/game/game_rodata_slow_entry.s (fastaudio: no game_entry: the game's caller path still reaches the retail bytes (a standalone decoder does not retire the region))",
+          "host-replaced: 4 of 12 regions (4,820 of 31,092 B)",
           "these stay retail bytes in the matching ROM; a native port needs a host replacement for each"
         ],
-        "done": 0,
+        "done": 4,
         "total": 12,
         "unit": "regions",
         "closed": false,
-        "percent": 0.0
+        "percent": 33.33
       },
       {
         "id": "arm7",
@@ -229,7 +227,7 @@
         "measured": true,
         "summary": "14 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD b87a129ed58d and dashboard policy",
+          "evidence report matches HEAD 87e6650b5d08 and dashboard policy",
           "no executable check yet (14): portable-core/engine/host-build-and-tests, portable-core/vm/host-build-and-tests, portable-core/ui/host-build-and-tests, portable-core/gameplay/host-build-and-tests, portable-core/rendering/host-build-and-tests, portable-core/asset-loaders/host-build-and-tests, behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior"
         ],
         "done": 14,
