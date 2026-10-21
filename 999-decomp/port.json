@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "19b05a424ed0cc108d71b2762f54f29f7c3c1c54",
+  "revision": "e1c7807c08f64bf41331443f415f2e9dc94059f0",
   "census": {
     "passed": 1033,
     "total": 1046,
@@ -46,7 +46,7 @@
       "real": 19,
       "unresolved": 0
     },
-    "elapsed_s": 11.6,
+    "elapsed_s": 11.67,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -230,7 +230,7 @@
         "measured": true,
         "summary": "12 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD 19b05a424ed0 and dashboard policy",
+          "evidence report matches HEAD e1c7807c08f6 and dashboard policy",
           "no executable check yet (12): portable-core/engine/host-build-and-tests, portable-core/ui/host-build-and-tests, portable-core/rendering/host-build-and-tests, portable-core/asset-loaders/host-build-and-tests, behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior"
         ],
         "done": 16,
