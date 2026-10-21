@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "76ef829690f1439f3dd2e87f06b84928ba4c868c",
+  "revision": "fadcd51c66f23eb541b35ab8cc0d494c37681cb3",
   "census": {
     "passed": 1033,
     "total": 1046,
@@ -134,7 +134,7 @@
   },
   "readiness": {
     "done": false,
-    "percent": 48.47,
+    "percent": 52.78,
     "areas": [
       {
         "id": "arm9",
@@ -182,17 +182,19 @@
         "title": "ARM7 binary",
         "open": 1,
         "measured": true,
-        "summary": "2,716 of 160,048 B recovered as exact source (1.70%); host-service route 1 of 2 requirements proven",
+        "summary": "44,098 of 160,048 B recovered as exact source (27.55%); host-service route 1 of 2 requirements proven",
         "details": [
-          "61 exact units in config/recovery/arm7_units.json",
+          "61 leaf proofs, 1 linked modules and 92 exact linked fragment groups; unique file-byte union",
+          "source categories: code 41,186 B, data 2,852 B, metadata 24 B, untriaged 36 B",
+          "typed BSS layout: 1,300 B (separate from retail-file bytes)",
           "closes through exact source for every byte or through the typed ARM7 host-service route (docs/recovery/arm7/HOST_SERVICES.md, tests/arm7/check_host_services.py)",
           "host-service requirements not proven: game-sdk-bindings-and-required-arm7-behavior"
         ],
-        "done": 2716,
+        "done": 44098,
         "total": 160048,
         "unit": "bytes",
         "closed": false,
-        "percent": 1.7
+        "percent": 27.55
       },
       {
         "id": "nitrofs",
@@ -225,7 +227,7 @@
         "measured": true,
         "summary": "15 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD 76ef829690f1 and dashboard policy",
+          "evidence report matches HEAD fadcd51c66f2 and dashboard policy",
           "no executable check yet (15): portable-core/engine/host-build-and-tests, portable-core/vm/host-build-and-tests, portable-core/ui/host-build-and-tests, portable-core/gameplay/host-build-and-tests, portable-core/rendering/host-build-and-tests, portable-core/save/host-build-and-tests, portable-core/asset-loaders/host-build-and-tests, behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior"
         ],
         "done": 13,
