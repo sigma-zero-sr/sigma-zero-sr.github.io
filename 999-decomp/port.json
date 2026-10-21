@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "fadcd51c66f23eb541b35ab8cc0d494c37681cb3",
+  "revision": "599f5995546739297823d1481f0b34cdd87c5632",
   "census": {
     "passed": 1033,
     "total": 1046,
@@ -46,7 +46,7 @@
       "real": 18,
       "unresolved": 0
     },
-    "elapsed_s": 11.46,
+    "elapsed_s": 11.65,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -227,7 +227,7 @@
         "measured": true,
         "summary": "15 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD fadcd51c66f2 and dashboard policy",
+          "evidence report matches HEAD 599f59955467 and dashboard policy",
           "no executable check yet (15): portable-core/engine/host-build-and-tests, portable-core/vm/host-build-and-tests, portable-core/ui/host-build-and-tests, portable-core/gameplay/host-build-and-tests, portable-core/rendering/host-build-and-tests, portable-core/save/host-build-and-tests, portable-core/asset-loaders/host-build-and-tests, behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior"
         ],
         "done": 13,
