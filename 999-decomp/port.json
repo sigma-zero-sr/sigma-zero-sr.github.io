@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "cdf4d8881d717ed59edb295679c4b13499ad78b5",
+  "revision": "953258f6cd51cc8007abda1b7e87606f43194702",
   "census": {
     "passed": 1033,
     "total": 1046,
@@ -46,7 +46,7 @@
       "real": 19,
       "unresolved": 0
     },
-    "elapsed_s": 13.05,
+    "elapsed_s": 12.33,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -139,7 +139,7 @@
   },
   "readiness": {
     "done": false,
-    "percent": 60.15,
+    "percent": 62.53,
     "areas": [
       {
         "id": "arm9",
@@ -226,18 +226,18 @@
       {
         "id": "host-evidence",
         "title": "Portable core and behavioral suites",
-        "open": 12,
+        "open": 8,
         "measured": true,
-        "summary": "12 requirements have no check, 0 fail, 0 unproven",
+        "summary": "8 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD cdf4d8881d71 and dashboard policy",
-          "no executable check yet (12): portable-core/engine/host-build-and-tests, portable-core/ui/host-build-and-tests, portable-core/rendering/host-build-and-tests, portable-core/asset-loaders/host-build-and-tests, behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior"
+          "evidence report matches HEAD 953258f6cd51 and dashboard policy",
+          "no executable check yet (8): behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior"
         ],
-        "done": 16,
+        "done": 20,
         "total": 28,
         "unit": "requirements",
         "closed": false,
-        "percent": 57.14
+        "percent": 71.43
       },
       {
         "id": "tasks",
