@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "6f723aaaae2edcfab83d00443ba4646a1fabe494",
+  "revision": "e6977751245bc5d4e168cc059eed4832035cd014",
   "census": {
     "passed": 1033,
     "total": 1046,
@@ -46,7 +46,7 @@
       "real": 19,
       "unresolved": 0
     },
-    "elapsed_s": 13.16,
+    "elapsed_s": 11.56,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -185,19 +185,19 @@
         "title": "ARM7 binary",
         "open": 1,
         "measured": true,
-        "summary": "44,126 of 160,048 B recovered as exact source (27.57%); host-service route 1 of 2 requirements proven",
+        "summary": "44,174 of 160,048 B recovered as exact source (27.60%); host-service route 1 of 2 requirements proven",
         "details": [
-          "61 leaf proofs, 1 linked modules and 93 exact linked fragment groups; unique file-byte union",
-          "source categories: code 41,186 B, data 2,852 B, metadata 24 B, untriaged 64 B",
+          "61 leaf proofs, 1 linked modules and 94 exact linked fragment groups; unique file-byte union",
+          "source categories: code 41,234 B, data 2,852 B, metadata 24 B, untriaged 64 B",
           "typed BSS layout: 1,300 B (separate from retail-file bytes)",
           "closes through exact source for every byte or through the typed ARM7 host-service route (docs/recovery/arm7/HOST_SERVICES.md, tests/arm7/check_host_services.py)",
           "host-service requirements not proven: game-sdk-bindings-and-required-arm7-behavior"
         ],
-        "done": 44126,
+        "done": 44174,
         "total": 160048,
         "unit": "bytes",
         "closed": false,
-        "percent": 27.57
+        "percent": 27.6
       },
       {
         "id": "nitrofs",
@@ -230,7 +230,7 @@
         "measured": true,
         "summary": "8 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD 6f723aaaae2e and dashboard policy",
+          "evidence report matches HEAD e6977751245b and dashboard policy",
           "no executable check yet (8): behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior"
         ],
         "done": 20,
