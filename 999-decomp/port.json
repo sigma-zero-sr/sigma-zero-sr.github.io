@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "70789cdbeda699a7653d4148a26d3abe84e63cfe",
+  "revision": "63478107bb8bbd7a26ab0f8e25d66f1f567a4955",
   "census": {
     "passed": 1033,
     "total": 1046,
@@ -46,7 +46,7 @@
       "real": 19,
       "unresolved": 0
     },
-    "elapsed_s": 11.5,
+    "elapsed_s": 11.59,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -139,7 +139,7 @@
   },
   "readiness": {
     "done": false,
-    "percent": 69.57,
+    "percent": 73.73,
     "areas": [
       {
         "id": "arm9",
@@ -166,19 +166,18 @@
       {
         "id": "binary-regions",
         "title": "Registered binary regions (MobiClip codec, rodata code payloads)",
-        "open": 3,
+        "open": 0,
         "measured": true,
-        "summary": "9 of 12 regions host-replaced; 3 still need host replacements",
+        "summary": "12 of 12 regions host-replaced; 0 still need host replacements",
         "details": [
-          "third-party-binary-code: 24,348 B open",
-          "host-replaced: 9 of 12 regions (6,744 of 31,092 B)",
+          "host-replaced: 12 of 12 regions (31,092 of 31,092 B)",
           "these stay retail bytes in the matching ROM; a native port needs a host replacement for each"
         ],
-        "done": 9,
+        "done": 12,
         "total": 12,
         "unit": "regions",
-        "closed": false,
-        "percent": 75.0
+        "closed": true,
+        "percent": 100.0
       },
       {
         "id": "arm7",
@@ -230,7 +229,7 @@
         "measured": true,
         "summary": "8 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD 70789cdbeda6 and dashboard policy",
+          "evidence report matches HEAD 63478107bb8b and dashboard policy",
           "no executable check yet (8): behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior"
         ],
         "done": 20,
