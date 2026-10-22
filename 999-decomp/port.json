@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "bbec4a5978ce7a08c60fe3d0c1a425755eecb211",
+  "revision": "6f723aaaae2edcfab83d00443ba4646a1fabe494",
   "census": {
     "passed": 1033,
     "total": 1046,
@@ -46,7 +46,7 @@
       "real": 19,
       "unresolved": 0
     },
-    "elapsed_s": 13.62,
+    "elapsed_s": 13.16,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -139,29 +139,29 @@
   },
   "readiness": {
     "done": false,
-    "percent": 69.48,
+    "percent": 69.49,
     "areas": [
       {
         "id": "arm9",
         "title": "ARM9 retail reconstruction",
-        "open": 42,
+        "open": 40,
         "measured": true,
-        "summary": "90.36% of code closed for the port (62 functions host-replaced), 42 TUs open",
+        "summary": "90.40% of code closed for the port (73 functions host-replaced), 40 TUs open",
         "details": [
           "source-linked (complete TUs): 547,896 of 623,382 B (87.89%)",
           "code not exact: 39,226 B in 159 functions",
           "exact semantic code in TUs still open: 32,612 B",
-          "host-replaced asm_walls functions: 62 (13,010 B)",
-          "TUs open for the port: 42",
+          "host-replaced asm_walls functions: 73 (13,670 B)",
+          "TUs open for the port: 40",
           "registered replacements not proven (12): CpuFastSet (bios-services: not an asm_walls row), LZ77UnCompReadByCallbackWrite16bit (bios-services: not an asm_walls row), BitUnPack (bios-services: not an asm_walls row), Sqrt (bios-services: not an asm_walls row), LZ77UnCompReadNormalWrite8bit (bios-services: not an asm_walls row), RLUnCompReadByCallbackWrite16bit (bios-services: not an asm_walls row), CpuSet (bios-services: not an asm_walls row), Div (bios-services: not an asm_walls row), +4 more",
           "largest open TUs (B not covered): src/game/snd_02005f04 (5,392 B), src/game/postccarry_53bec (3,388 B), src/game/gap1a (2,696 B), src/game/func_02011584 (2,448 B), src/game/gap1e (2,240 B)",
           "inline-asm bodies: 27 in 13 source files; .s files: 6 (src/core/sdk_overlay_digest.s, src/game/game_rodata.s, src/game/game_rodata_slow_entry.s, src/game/game_rodata_synthesis.s, src/game/game_rodata_tail.s, src/os/os_protection_unit.s)"
         ],
-        "done": 563314,
+        "done": 563554,
         "total": 623382,
         "unit": "bytes",
         "closed": false,
-        "percent": 90.36
+        "percent": 90.4
       },
       {
         "id": "binary-regions",
@@ -230,7 +230,7 @@
         "measured": true,
         "summary": "8 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD bbec4a5978ce and dashboard policy",
+          "evidence report matches HEAD 6f723aaaae2e and dashboard policy",
           "no executable check yet (8): behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior"
         ],
         "done": 20,
