@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "953258f6cd51cc8007abda1b7e87606f43194702",
+  "revision": "261df9e1a5a060336807d98c06bf0f43e46f37dc",
   "census": {
     "passed": 1033,
     "total": 1046,
@@ -46,7 +46,7 @@
       "real": 19,
       "unresolved": 0
     },
-    "elapsed_s": 12.33,
+    "elapsed_s": 12.44,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -139,7 +139,7 @@
   },
   "readiness": {
     "done": false,
-    "percent": 62.53,
+    "percent": 69.48,
     "areas": [
       {
         "id": "arm9",
@@ -166,19 +166,19 @@
       {
         "id": "binary-regions",
         "title": "Registered binary regions (MobiClip codec, rodata code payloads)",
-        "open": 8,
+        "open": 3,
         "measured": true,
-        "summary": "4 of 12 regions host-replaced; 8 still need host replacements",
+        "summary": "9 of 12 regions host-replaced; 3 still need host replacements",
         "details": [
-          "third-party-binary-code: 26,272 B open",
-          "host-replaced: 4 of 12 regions (4,820 of 31,092 B)",
+          "third-party-binary-code: 24,348 B open",
+          "host-replaced: 9 of 12 regions (6,744 of 31,092 B)",
           "these stay retail bytes in the matching ROM; a native port needs a host replacement for each"
         ],
-        "done": 4,
+        "done": 9,
         "total": 12,
         "unit": "regions",
         "closed": false,
-        "percent": 33.33
+        "percent": 75.0
       },
       {
         "id": "arm7",
@@ -230,7 +230,7 @@
         "measured": true,
         "summary": "8 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD 953258f6cd51 and dashboard policy",
+          "evidence report matches HEAD 261df9e1a5a0 and dashboard policy",
           "no executable check yet (8): behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior"
         ],
         "done": 20,
@@ -247,7 +247,7 @@
         "summary": "9 tasks not complete across arm7, nitrofs, port",
         "details": [
           "arm7: 4/6 complete, 2 ready: arm7-runtime-exact-batch, arm7-sound-exact-batch",
-          "nitrofs: 9/15 complete, 6 ready: nitrofs-sir0-sound-effect-decoder, nitrofs-sir0-data-other-decoder, nitrofs-at5p-model-decoder, nitrofs-sadl-stream-decoder, nitrofs-sir0-bgm-decoder, nitrofs-sir0-field-decoder",
+          "nitrofs: 9/15 complete, 4 ready: nitrofs-sir0-sound-effect-decoder, nitrofs-at5p-model-decoder, nitrofs-sadl-stream-decoder, nitrofs-sir0-bgm-decoder",
           "port: 8/9 complete, 0 ready"
         ],
         "done": 21,
