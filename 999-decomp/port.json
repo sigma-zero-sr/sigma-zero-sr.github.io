@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "3a3814a8f3f61bcc446364d4c5dc48cab44a5759",
+  "revision": "7b1d17f4ef9566cd3bbc0c086a09504ae40c9bc1",
   "census": {
     "passed": 1033,
     "total": 1046,
@@ -46,7 +46,7 @@
       "real": 19,
       "unresolved": 0
     },
-    "elapsed_s": 13.03,
+    "elapsed_s": 12.33,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -153,7 +153,7 @@
           "exact semantic code in TUs still open: 30,584 B",
           "host-replaced asm_walls functions: 74 (13,694 B)",
           "TUs open for the port: 39",
-          "registered replacements not proven (12): CpuFastSet (bios-services: not an asm_walls row), LZ77UnCompReadByCallbackWrite16bit (bios-services: not an asm_walls row), BitUnPack (bios-services: not an asm_walls row), Sqrt (bios-services: not an asm_walls row), LZ77UnCompReadNormalWrite8bit (bios-services: not an asm_walls row), RLUnCompReadByCallbackWrite16bit (bios-services: not an asm_walls row), CpuSet (bios-services: not an asm_walls row), Div (bios-services: not an asm_walls row), +4 more",
+          "registered replacements not proven (13): CpuFastSet (bios-services: not an asm_walls row), LZ77UnCompReadByCallbackWrite16bit (bios-services: not an asm_walls row), BitUnPack (bios-services: not an asm_walls row), Sqrt (bios-services: not an asm_walls row), LZ77UnCompReadNormalWrite8bit (bios-services: not an asm_walls row), RLUnCompReadByCallbackWrite16bit (bios-services: not an asm_walls row), CpuSet (bios-services: not an asm_walls row), Div (bios-services: not an asm_walls row), +5 more",
           "largest open TUs (B not covered): src/game/snd_02005f04 (5,392 B), src/game/postccarry_53bec (3,388 B), src/game/gap1a (2,696 B), src/game/func_02011584 (2,448 B), src/game/gap1e (2,240 B)",
           "inline-asm bodies: 27 in 13 source files; .s files: 6 (src/core/sdk_overlay_digest.s, src/game/game_rodata.s, src/game/game_rodata_slow_entry.s, src/game/game_rodata_synthesis.s, src/game/game_rodata_tail.s, src/os/os_protection_unit.s)"
         ],
@@ -229,7 +229,7 @@
         "measured": true,
         "summary": "8 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD 3a3814a8f3f6 and dashboard policy",
+          "evidence report matches HEAD 7b1d17f4ef95 and dashboard policy",
           "no executable check yet (8): behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior"
         ],
         "done": 20,
