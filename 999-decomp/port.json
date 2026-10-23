@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "dc38442b83f6fe4b5c8ef5d05de5516d6d5616ed",
+  "revision": "b00a2dbb38aaae85d7c4e6615eee43f31ca19731",
   "census": {
     "passed": 1033,
     "total": 1046,
@@ -14,9 +14,9 @@
   },
   "assets": {
     "files": 6419,
-    "files_with_loader": 5297,
+    "files_with_loader": 5299,
     "families": 16,
-    "families_with_loader": 6
+    "families_with_loader": 7
   },
   "tasks": {
     "arm7": {
@@ -46,7 +46,7 @@
       "real": 19,
       "unresolved": 0
     },
-    "elapsed_s": 12.83,
+    "elapsed_s": 11.49,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -139,7 +139,7 @@
   },
   "readiness": {
     "done": false,
-    "percent": 75.31,
+    "percent": 75.32,
     "areas": [
       {
         "id": "arm9",
@@ -201,9 +201,9 @@
       {
         "id": "nitrofs",
         "title": "NitroFS assets",
-        "open": 10,
+        "open": 9,
         "measured": true,
-        "summary": "5297 of 6419 files have a portable loader; 10 format families open",
+        "summary": "5299 of 6419 files have a portable loader; 9 format families open",
         "details": [
           "sadl-stream: 9 files, 29,615,488 B, at classified",
           "mobiclip-video: 82 files, 15,840,228 B, at decoded",
@@ -213,14 +213,13 @@
           "at5p-model: 159 files, 2,916,279 B, at classified",
           "sir0-field: 33 files, 237,008 B, at classified",
           "unclassified: 2 files, 8,064 B, at unclassified",
-          "raw-binary: 2 files, 2,624 B, at classified",
           "filesystem-marker: 2 files, 18 B, at classified"
         ],
-        "done": 5297,
+        "done": 5299,
         "total": 6419,
         "unit": "files",
         "closed": false,
-        "percent": 82.52
+        "percent": 82.55
       },
       {
         "id": "host-evidence",
@@ -229,7 +228,7 @@
         "measured": true,
         "summary": "8 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD dc38442b83f6 and dashboard policy",
+          "evidence report matches HEAD b00a2dbb38aa and dashboard policy",
           "no executable check yet (8): behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior"
         ],
         "done": 20,
