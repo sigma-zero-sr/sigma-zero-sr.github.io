@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "e48b42d1e42a20efbd7275e6e118284cfe5ed593",
+  "revision": "941beefb72ac669b2802671755338422f34151e5",
   "census": {
     "passed": 1033,
     "total": 1046,
@@ -28,7 +28,7 @@
       "total": 15
     },
     "port": {
-      "complete": 8,
+      "complete": 9,
       "total": 9
     }
   },
@@ -46,7 +46,7 @@
       "real": 19,
       "unresolved": 0
     },
-    "elapsed_s": 11.48,
+    "elapsed_s": 12.65,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -139,7 +139,7 @@
   },
   "readiness": {
     "done": false,
-    "percent": 74.6,
+    "percent": 75.16,
     "areas": [
       {
         "id": "arm9",
@@ -229,7 +229,7 @@
         "measured": true,
         "summary": "8 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD e48b42d1e42a and dashboard policy",
+          "evidence report matches HEAD 941beefb72ac and dashboard policy",
           "no executable check yet (8): behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior"
         ],
         "done": 20,
@@ -241,19 +241,19 @@
       {
         "id": "tasks",
         "title": "Recovery task queues",
-        "open": 9,
+        "open": 8,
         "measured": true,
-        "summary": "9 tasks not complete across arm7, nitrofs, port",
+        "summary": "8 tasks not complete across arm7, nitrofs, port",
         "details": [
           "arm7: 4/6 complete, 2 ready: arm7-runtime-exact-batch, arm7-sound-exact-batch",
           "nitrofs: 9/15 complete, 4 ready: nitrofs-sir0-sound-effect-decoder, nitrofs-at5p-model-decoder, nitrofs-sadl-stream-decoder, nitrofs-sir0-bgm-decoder",
-          "port: 8/9 complete, 0 ready"
+          "port: 9/9 complete, 0 ready"
         ],
-        "done": 21,
+        "done": 22,
         "total": 30,
         "unit": "tasks",
         "closed": false,
-        "percent": 70.0
+        "percent": 73.33
       }
     ]
   }
