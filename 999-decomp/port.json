@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "026ad3d0ea95d81e1bb0f26fcc7d53f66b020a7b",
+  "revision": "4211495eacebb6e253d95f5ffb5e424e3edbcec5",
   "census": {
     "passed": 1033,
     "total": 1046,
@@ -46,7 +46,7 @@
       "real": 19,
       "unresolved": 0
     },
-    "elapsed_s": 12.37,
+    "elapsed_s": 12.3,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -139,7 +139,7 @@
   },
   "readiness": {
     "done": false,
-    "percent": 75.36,
+    "percent": 75.38,
     "areas": [
       {
         "id": "arm9",
@@ -184,19 +184,19 @@
         "title": "ARM7 binary",
         "open": 1,
         "measured": true,
-        "summary": "54,186 of 160,048 B recovered as exact source (33.86%); host-service route 1 of 2 requirements proven",
+        "summary": "54,454 of 160,048 B recovered as exact source (34.02%); host-service route 1 of 2 requirements proven",
         "details": [
-          "70 leaf proofs, 1 linked modules and 173 exact linked fragment groups; unique file-byte union",
-          "source categories: code 51,226 B, data 2,852 B, metadata 24 B, untriaged 84 B",
+          "72 leaf proofs, 1 linked modules and 174 exact linked fragment groups; unique file-byte union",
+          "source categories: code 51,494 B, data 2,852 B, metadata 24 B, untriaged 84 B",
           "typed BSS layout: 1,300 B (separate from retail-file bytes)",
           "closes through exact source for every byte or through the typed ARM7 host-service route (docs/recovery/arm7/HOST_SERVICES.md, tests/arm7/check_host_services.py)",
           "host-service requirements not proven: game-sdk-bindings-and-required-arm7-behavior"
         ],
-        "done": 54186,
+        "done": 54454,
         "total": 160048,
         "unit": "bytes",
         "closed": false,
-        "percent": 33.86
+        "percent": 34.02
       },
       {
         "id": "nitrofs",
@@ -228,7 +228,7 @@
         "measured": true,
         "summary": "8 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD 026ad3d0ea95 and dashboard policy",
+          "evidence report matches HEAD 4211495eaceb and dashboard policy",
           "no executable check yet (8): behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior"
         ],
         "done": 20,
