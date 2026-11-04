@@ -1,22 +1,21 @@
 {
   "schema": 1,
-  "revision": "bd85b0f76d54377e7520e1665781d5b2a227fab7",
+  "revision": "cdca138a08ec6e92370908c650dc62f55aa3fd8e",
   "census": {
-    "passed": 1038,
+    "passed": 1039,
     "total": 1046,
-    "percent": 99.23518164435949,
+    "percent": 99.33078393881452,
     "game_passed": 898,
     "game_total": 900,
     "error_classes": {
-      "syntax_or_semantics": 1,
       "unsupported_assembly": 7
     }
   },
   "assets": {
     "files": 6419,
-    "files_with_loader": 5299,
-    "families": 16,
-    "families_with_loader": 7
+    "files_with_loader": 6395,
+    "families": 17,
+    "families_with_loader": 15
   },
   "tasks": {
     "arm7": {
@@ -24,8 +23,8 @@
       "total": 6
     },
     "nitrofs": {
-      "complete": 9,
-      "total": 15
+      "complete": 19,
+      "total": 20
     },
     "port": {
       "complete": 9,
@@ -40,13 +39,13 @@
     "undefined_names": 0,
     "stubs": {
       "registered": 1694,
-      "generated": 1675,
-      "generated_functions": 209,
+      "generated": 1661,
+      "generated_functions": 195,
       "generated_data": 1466,
-      "real": 19,
+      "real": 33,
       "unresolved": 0
     },
-    "elapsed_s": 11.53,
+    "elapsed_s": 12.08,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -100,15 +99,15 @@
       "render-initialization-unavailable",
       "system-object-main-projection-prepared",
       "system-object-main-palette-prepared",
+      "system-object-sprite-characters-copied",
       "guide-input-metadata-prepared",
       "optional-system-object-caller-retired",
       "text-pool-decoded",
       "game-data-decoded",
       "normal-font41-metrics-ready",
-      "kanji-initialization-unavailable",
+      "kanji-fonts-metrics-ready",
       "window-slot36-asset-decoded",
       "window-slot35-asset-decoded",
-      "sound-initialization-unavailable",
       "sprite-h-mode-set",
       "epu-common-image-decoded",
       "search-local-state-constructed",
@@ -131,37 +130,37 @@
     "furthest_milestone": "600-frames-presented",
     "stop_at": null,
     "stop_chain": [],
-    "stubs_hit": 18,
-    "first_stub_hit": "FS_Init",
+    "stubs_hit": 10,
+    "first_stub_hit": "SND_Init",
     "failure": null,
     "frames": 600,
     "frames_reported": true
   },
   "readiness": {
     "done": false,
-    "percent": 75.38,
+    "percent": 81.26,
     "areas": [
       {
         "id": "arm9",
         "title": "ARM9 retail reconstruction",
-        "open": 38,
+        "open": 37,
         "measured": true,
-        "summary": "90.97% of code closed for the port (76 functions host-replaced), 38 TUs open",
+        "summary": "91.03% of code closed for the port (77 functions host-replaced), 37 TUs open",
         "details": [
           "source-linked (complete TUs): 547,896 of 623,382 B (87.89%)",
           "code not exact: 39,226 B in 159 functions",
           "exact semantic code in TUs still open: 30,584 B",
-          "host-replaced asm_walls functions: 76 (15,226 B)",
-          "TUs open for the port: 38",
-          "registered replacements not proven (13): CpuFastSet (bios-services: not an asm_walls row), LZ77UnCompReadByCallbackWrite16bit (bios-services: not an asm_walls row), BitUnPack (bios-services: not an asm_walls row), Sqrt (bios-services: not an asm_walls row), LZ77UnCompReadNormalWrite8bit (bios-services: not an asm_walls row), RLUnCompReadByCallbackWrite16bit (bios-services: not an asm_walls row), CpuSet (bios-services: not an asm_walls row), Div (bios-services: not an asm_walls row), +5 more",
+          "host-replaced asm_walls functions: 77 (15,286 B)",
+          "TUs open for the port: 37",
+          "registered replacements not proven (14): CpuFastSet (bios-services: not an asm_walls row), LZ77UnCompReadByCallbackWrite16bit (bios-services: not an asm_walls row), BitUnPack (bios-services: not an asm_walls row), Sqrt (bios-services: not an asm_walls row), LZ77UnCompReadNormalWrite8bit (bios-services: not an asm_walls row), RLUnCompReadByCallbackWrite16bit (bios-services: not an asm_walls row), CpuSet (bios-services: not an asm_walls row), Div (bios-services: not an asm_walls row), +6 more",
           "largest open TUs (B not covered): src/game/snd_02005f04 (5,392 B), src/game/postccarry_53bec (3,388 B), src/game/gap1a (2,696 B), src/game/func_02011584 (2,448 B), src/game/gap1e (2,240 B)",
           "inline-asm bodies: 27 in 13 source files; .s files: 6 (src/core/sdk_overlay_digest.s, src/game/game_rodata.s, src/game/game_rodata_slow_entry.s, src/game/game_rodata_synthesis.s, src/game/game_rodata_tail.s, src/os/os_protection_unit.s)"
         ],
-        "done": 567078,
+        "done": 567438,
         "total": 623382,
         "unit": "bytes",
         "closed": false,
-        "percent": 90.97
+        "percent": 91.03
       },
       {
         "id": "binary-regions",
@@ -201,25 +200,18 @@
       {
         "id": "nitrofs",
         "title": "NitroFS assets",
-        "open": 9,
+        "open": 2,
         "measured": true,
-        "summary": "5299 of 6419 files have a portable loader; 9 format families open",
+        "summary": "6395 of 6419 files have a portable loader; 2 format families open",
         "details": [
-          "sadl-stream: 9 files, 29,615,488 B, at classified",
-          "mobiclip-video: 82 files, 15,840,228 B, at decoded",
-          "sir0-sound-effect: 519 files, 11,182,368 B, at classified",
-          "sir0-bgm: 18 files, 6,462,144 B, at classified",
-          "sir0-data-other: 296 files, 4,922,128 B, at classified",
-          "at5p-model: 159 files, 2,916,279 B, at classified",
-          "sir0-field: 33 files, 237,008 B, at classified",
-          "unclassified: 2 files, 8,064 B, at unclassified",
-          "filesystem-marker: 2 files, 18 B, at classified"
+          "sir0-data-other: 22 files, 197,216 B, at classified",
+          "filesystem-marker: 2 files, 18 B, at round-trip"
         ],
-        "done": 5299,
+        "done": 6395,
         "total": 6419,
         "unit": "files",
         "closed": false,
-        "percent": 82.55
+        "percent": 99.63
       },
       {
         "id": "host-evidence",
@@ -228,8 +220,10 @@
         "measured": true,
         "summary": "8 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD bd85b0f76d54 and dashboard policy",
-          "no executable check yet (8): behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior"
+          "evidence report matches HEAD cdca138a08ec and dashboard policy",
+          "no executable check yet (8): behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior",
+          "opcode corpus (tools/check_opcode_corpus.py --usage for real-script coverage): 4 named-refusal, 35 native-fixture, 18 open, 1 structural-only, 1 unresolved of 59 opcodes",
+          "asset real-file goldens (tools/check_asset_real_goldens.py): 15 of 18 families covered; not covered: filesystem-marker, sir0-data-other, unclassified"
         ],
         "done": 20,
         "total": 28,
@@ -240,19 +234,19 @@
       {
         "id": "tasks",
         "title": "Recovery task queues",
-        "open": 8,
+        "open": 3,
         "measured": true,
-        "summary": "8 tasks not complete across arm7, nitrofs, port",
+        "summary": "3 tasks not complete across arm7, nitrofs, port",
         "details": [
           "arm7: 4/6 complete, 2 ready: arm7-runtime-exact-batch, arm7-sound-exact-batch",
-          "nitrofs: 9/15 complete, 4 ready: nitrofs-sir0-sound-effect-decoder, nitrofs-at5p-model-decoder, nitrofs-sadl-stream-decoder, nitrofs-sir0-bgm-decoder",
+          "nitrofs: 19/20 complete, 0 ready",
           "port: 9/9 complete, 0 ready"
         ],
-        "done": 22,
-        "total": 30,
+        "done": 32,
+        "total": 35,
         "unit": "tasks",
         "closed": false,
-        "percent": 73.33
+        "percent": 91.43
       }
     ]
   }
