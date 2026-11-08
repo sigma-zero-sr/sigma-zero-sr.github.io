@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "082e11e046370a2923ba9f7a2631c36c2d6986df",
+  "revision": "6de929ada26849ddd47fce8a7f8e969d05e1e45a",
   "census": {
     "passed": 1039,
     "total": 1046,
@@ -138,7 +138,7 @@
   },
   "readiness": {
     "done": false,
-    "percent": 82.03,
+    "percent": 82.07,
     "areas": [
       {
         "id": "arm9",
@@ -183,19 +183,19 @@
         "title": "ARM7 binary",
         "open": 1,
         "measured": true,
-        "summary": "56,182 of 160,048 B recovered as exact source (35.10%); host-service route 1 of 2 requirements proven",
+        "summary": "56,542 of 160,048 B recovered as exact source (35.33%); host-service route 1 of 2 requirements proven",
         "details": [
-          "72 leaf proofs, 1 linked modules and 183 exact linked fragment groups; unique file-byte union",
-          "source categories: code 53,222 B, data 2,852 B, metadata 24 B, untriaged 84 B",
+          "72 leaf proofs, 1 linked modules and 185 exact linked fragment groups; unique file-byte union",
+          "source categories: code 53,582 B, data 2,852 B, metadata 24 B, untriaged 84 B",
           "typed BSS layout: 1,300 B (separate from retail-file bytes)",
           "closes through exact source for every byte or through the typed ARM7 host-service route (docs/recovery/arm7/HOST_SERVICES.md, tests/arm7/check_host_services.py)",
           "host-service requirements not proven: game-sdk-bindings-and-required-arm7-behavior"
         ],
-        "done": 56182,
+        "done": 56542,
         "total": 160048,
         "unit": "bytes",
         "closed": false,
-        "percent": 35.1
+        "percent": 35.33
       },
       {
         "id": "nitrofs",
@@ -220,7 +220,7 @@
         "measured": true,
         "summary": "7 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD 082e11e04637 and dashboard policy",
+          "evidence report matches HEAD 6de929ada268 and dashboard policy",
           "no executable check yet (7): behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior",
           "opcode corpus (tools/check_opcode_corpus.py --usage for real-script coverage): 3 named-refusal, 36 native-fixture, 18 open, 1 structural-only, 1 unresolved of 59 opcodes",
           "asset real-file goldens (tools/check_asset_real_goldens.py): 15 of 18 families covered; not covered: filesystem-marker, sir0-data-other, unclassified",
