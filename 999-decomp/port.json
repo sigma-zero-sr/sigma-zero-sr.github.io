@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "b7b14769c2cfd16e33d6d8097c412a3996b67026",
+  "revision": "30fde78b73770f3bf4b9fe24fd39f3568123f317",
   "census": {
     "passed": 1039,
     "total": 1046,
@@ -45,7 +45,7 @@
       "real": 33,
       "unresolved": 0
     },
-    "elapsed_s": 11.93,
+    "elapsed_s": 12.15,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -138,7 +138,7 @@
   },
   "readiness": {
     "done": false,
-    "percent": 81.26,
+    "percent": 81.85,
     "areas": [
       {
         "id": "arm9",
@@ -216,20 +216,21 @@
       {
         "id": "host-evidence",
         "title": "Portable core and behavioral suites",
-        "open": 8,
+        "open": 7,
         "measured": true,
-        "summary": "8 requirements have no check, 0 fail, 0 unproven",
+        "summary": "7 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD b7b14769c2cf and dashboard policy",
-          "no executable check yet (8): behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/scripted-playthroughs/checkpoint-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior",
+          "evidence report matches HEAD 30fde78b7377 and dashboard policy",
+          "no executable check yet (7): behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior",
           "opcode corpus (tools/check_opcode_corpus.py --usage for real-script coverage): 3 named-refusal, 36 native-fixture, 18 open, 1 structural-only, 1 unresolved of 59 opcodes",
-          "asset real-file goldens (tools/check_asset_real_goldens.py): 15 of 18 families covered; not covered: filesystem-marker, sir0-data-other, unclassified"
+          "asset real-file goldens (tools/check_asset_real_goldens.py): 15 of 18 families covered; not covered: filesystem-marker, sir0-data-other, unclassified",
+          "no honest check possible yet (evidence missing, docs/recovery/behavior/open-requirements.md): function-differential/all-recovered-functions: no per-function differential registry or harness over every recovered function; emulator-replays/retail-comparison: no retail emulator replay captures (tools/check_title_checkpoint.py covers one title frame and cannot run here); rendering-screenshots/checkpoint-comparison: no retail checkpoint screenshots in the repository; audio-events/event-trace-comparison: no retail sound-command trace; native effects are mostly refused in the boot; typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior: tests/arm7/check_game_sdk_bindings.py fails with open ARM7 senders and sound commands"
         ],
-        "done": 20,
+        "done": 21,
         "total": 28,
         "unit": "requirements",
         "closed": false,
-        "percent": 71.43
+        "percent": 75.0
       },
       {
         "id": "tasks",
