@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "198832015be641b9c684df04a5aa9fa9ffb91a29",
+  "revision": "74d4c5c209cad4fdc21826bcd9f1c478ccb2c19a",
   "census": {
     "passed": 1039,
     "total": 1046,
@@ -13,9 +13,9 @@
   },
   "assets": {
     "files": 6419,
-    "files_with_loader": 6395,
+    "files_with_loader": 6409,
     "families": 20,
-    "families_with_loader": 15
+    "families_with_loader": 18
   },
   "tasks": {
     "arm7": {
@@ -23,8 +23,8 @@
       "total": 6
     },
     "nitrofs": {
-      "complete": 20,
-      "total": 20
+      "complete": 21,
+      "total": 21
     },
     "port": {
       "complete": 9,
@@ -45,7 +45,7 @@
       "real": 34,
       "unresolved": 0
     },
-    "elapsed_s": 11.96,
+    "elapsed_s": 12.0,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -139,7 +139,7 @@
   },
   "readiness": {
     "done": false,
-    "percent": 82.54,
+    "percent": 82.61,
     "areas": [
       {
         "id": "arm9",
@@ -201,21 +201,18 @@
       {
         "id": "nitrofs",
         "title": "NitroFS assets",
-        "open": 5,
+        "open": 2,
         "measured": true,
-        "summary": "6395 of 6419 files have a portable loader; 5 format families open",
+        "summary": "6409 of 6419 files have a portable loader; 2 format families open",
         "details": [
           "sir0-etc-orphan-table: 8 files, 107,360 B, at round-trip",
-          "sir0-etc-table: 8 files, 62,352 B, at round-trip",
-          "sir0-kanji-font: 4 files, 17,968 B, at round-trip",
-          "sir0-sprite-model: 2 files, 9,536 B, at round-trip",
           "filesystem-marker: 2 files, 18 B, at round-trip"
         ],
-        "done": 6395,
+        "done": 6409,
         "total": 6419,
         "unit": "files",
         "closed": false,
-        "percent": 99.63
+        "percent": 99.84
       },
       {
         "id": "host-evidence",
@@ -224,10 +221,10 @@
         "measured": true,
         "summary": "7 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD 198832015be6 and dashboard policy",
+          "evidence report matches HEAD 74d4c5c209ca and dashboard policy",
           "no executable check yet (7): behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior",
           "opcode corpus (tools/check_opcode_corpus.py --usage for real-script coverage): 3 named-refusal, 36 native-fixture, 18 open, 1 structural-only, 1 unresolved of 59 opcodes",
-          "asset real-file goldens (tools/check_asset_real_goldens.py): 15 of 22 families covered; not covered: filesystem-marker, sir0-data-other, sir0-etc-orphan-table, sir0-etc-table, sir0-kanji-font, sir0-sprite-model, unclassified",
+          "asset real-file goldens (tools/check_asset_real_goldens.py): 18 of 22 families covered; not covered: filesystem-marker, sir0-data-other, sir0-etc-orphan-table, unclassified",
           "no honest check possible yet (evidence missing, docs/recovery/behavior/open-requirements.md): function-differential/all-recovered-functions: no per-function differential registry or harness over every recovered function; emulator-replays/retail-comparison: no retail emulator replay captures (tools/check_title_checkpoint.py covers one title frame and cannot run here); rendering-screenshots/checkpoint-comparison: no retail checkpoint screenshots in the repository; audio-events/event-trace-comparison: no retail sound-command trace; native effects are mostly refused in the boot; typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior: tests/arm7/check_game_sdk_bindings.py fails with open ARM7 senders and sound commands"
         ],
         "done": 21,
@@ -244,14 +241,14 @@
         "summary": "2 tasks not complete across arm7, nitrofs, port",
         "details": [
           "arm7: 4/6 complete, 2 ready: arm7-runtime-exact-batch, arm7-sound-exact-batch",
-          "nitrofs: 20/20 complete, 0 ready",
+          "nitrofs: 21/21 complete, 0 ready",
           "port: 9/9 complete, 0 ready"
         ],
-        "done": 33,
-        "total": 35,
+        "done": 34,
+        "total": 36,
         "unit": "tasks",
         "closed": false,
-        "percent": 94.29
+        "percent": 94.44
       }
     ]
   }
