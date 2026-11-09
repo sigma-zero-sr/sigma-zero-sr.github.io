@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "f6510068e2c5da457d318645454469c77a7e265b",
+  "revision": "b5f3a5e5481bf65092876cd0f32c8a6c6e5e5a30",
   "census": {
     "passed": 1039,
     "total": 1046,
@@ -47,7 +47,7 @@
       "real": 36,
       "unresolved": 0
     },
-    "elapsed_s": 12.01,
+    "elapsed_s": 12.15,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -223,7 +223,7 @@
         "measured": true,
         "summary": "7 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD f6510068e2c5 and dashboard policy",
+          "evidence report matches HEAD b5f3a5e5481b and dashboard policy",
           "no executable check yet (7): behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior",
           "opcode corpus (tools/check_opcode_corpus.py --usage for real-script coverage): 3 named-refusal, 36 native-fixture, 18 open, 1 structural-only, 1 unresolved of 59 opcodes",
           "asset real-file goldens (tools/check_asset_real_goldens.py): 18 of 22 families covered, 2 exempt (proven unconsumed); not covered: sir0-data-other, unclassified",
