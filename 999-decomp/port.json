@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "37d3f9742bf3c704a9a32d26874c651b88f45d40",
+  "revision": "d80bad7e8df52cd13dedeeca31734a51f8ef2223",
   "census": {
     "passed": 1039,
     "total": 1046,
@@ -47,7 +47,7 @@
       "real": 36,
       "unresolved": 0
     },
-    "elapsed_s": 12.01,
+    "elapsed_s": 11.94,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -222,7 +222,7 @@
         "measured": true,
         "summary": "6 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD 37d3f9742bf3 and dashboard policy",
+          "evidence report matches HEAD d80bad7e8df5 and dashboard policy",
           "no executable check yet (6): behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison",
           "opcode corpus (tools/check_opcode_corpus.py --usage for real-script coverage): 4 named-refusal, 39 native-fixture, 15 open, 1 structural-only of 59 opcodes",
           "asset real-file goldens (tools/check_asset_real_goldens.py): 18 of 22 families covered, 2 exempt (proven unconsumed); not covered: sir0-data-other, unclassified",
