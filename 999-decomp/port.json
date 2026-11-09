@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "b5f3a5e5481bf65092876cd0f32c8a6c6e5e5a30",
+  "revision": "50879e1c2273f13bff54c0eb44da9b7fcb0f3999",
   "census": {
     "passed": 1039,
     "total": 1046,
@@ -47,7 +47,7 @@
       "real": 36,
       "unresolved": 0
     },
-    "elapsed_s": 12.15,
+    "elapsed_s": 11.97,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -142,7 +142,7 @@
   },
   "readiness": {
     "done": false,
-    "percent": 82.66,
+    "percent": 94.03,
     "areas": [
       {
         "id": "arm9",
@@ -185,21 +185,20 @@
       {
         "id": "arm7",
         "title": "ARM7 binary",
-        "open": 1,
+        "open": 0,
         "measured": true,
-        "summary": "56,542 of 160,048 B recovered as exact source (35.33%); host-service route 1 of 2 requirements proven",
+        "summary": "56,542 of 160,048 B recovered as exact source (35.33%); host-service route 2 of 2 requirements proven",
         "details": [
           "72 leaf proofs, 1 linked modules and 185 exact linked fragment groups; unique file-byte union",
           "source categories: code 53,582 B, data 2,852 B, metadata 24 B, untriaged 84 B",
           "typed BSS layout: 1,300 B (separate from retail-file bytes)",
-          "closes through exact source for every byte or through the typed ARM7 host-service route (docs/recovery/arm7/HOST_SERVICES.md, tests/arm7/check_host_services.py)",
-          "host-service requirements not proven: game-sdk-bindings-and-required-arm7-behavior"
+          "closes through exact source for every byte or through the typed ARM7 host-service route (docs/recovery/arm7/HOST_SERVICES.md, tests/arm7/check_host_services.py)"
         ],
         "done": 56542,
         "total": 160048,
         "unit": "bytes",
-        "closed": false,
-        "percent": 35.33
+        "closed": true,
+        "percent": 100.0
       },
       {
         "id": "nitrofs",
@@ -219,21 +218,21 @@
       {
         "id": "host-evidence",
         "title": "Portable core and behavioral suites",
-        "open": 7,
+        "open": 6,
         "measured": true,
-        "summary": "7 requirements have no check, 0 fail, 0 unproven",
+        "summary": "6 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD b5f3a5e5481b and dashboard policy",
-          "no executable check yet (7): behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison, arm7-portable-replacement/typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior",
+          "evidence report matches HEAD 50879e1c2273 and dashboard policy",
+          "no executable check yet (6): behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/asset-loader-goldens/all-runtime-formats, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison",
           "opcode corpus (tools/check_opcode_corpus.py --usage for real-script coverage): 3 named-refusal, 36 native-fixture, 18 open, 1 structural-only, 1 unresolved of 59 opcodes",
           "asset real-file goldens (tools/check_asset_real_goldens.py): 18 of 22 families covered, 2 exempt (proven unconsumed); not covered: sir0-data-other, unclassified",
-          "no honest check possible yet (evidence missing, docs/recovery/behavior/open-requirements.md): function-differential/all-recovered-functions: no per-function differential registry or harness over every recovered function; emulator-replays/retail-comparison: no retail emulator replay captures (tools/check_title_checkpoint.py covers one title frame and cannot run here); rendering-screenshots/checkpoint-comparison: no retail checkpoint screenshots in the repository; audio-events/event-trace-comparison: no retail sound-command trace; native effects are mostly refused in the boot; typed-arm7-services/game-sdk-bindings-and-required-arm7-behavior: tests/arm7/check_game_sdk_bindings.py fails with open ARM7 senders and sound commands"
+          "no honest check possible yet (evidence missing, docs/recovery/behavior/open-requirements.md): function-differential/all-recovered-functions: no per-function differential registry or harness over every recovered function; emulator-replays/retail-comparison: no retail emulator replay captures (tools/check_title_checkpoint.py covers one title frame and cannot run here); rendering-screenshots/checkpoint-comparison: no retail checkpoint screenshots in the repository; audio-events/event-trace-comparison: no retail sound-command trace; native effects are mostly refused in the boot"
         ],
-        "done": 21,
+        "done": 22,
         "total": 28,
         "unit": "requirements",
         "closed": false,
-        "percent": 75.0
+        "percent": 78.57
       },
       {
         "id": "tasks",
