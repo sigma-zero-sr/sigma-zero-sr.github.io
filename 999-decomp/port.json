@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "79e18ce80c5af62425cf9de975dc230de3c9d459",
+  "revision": "76d47a128614e05c8d595c8d884a52c178566153",
   "census": {
     "passed": 1039,
     "total": 1046,
@@ -21,7 +21,7 @@
   },
   "tasks": {
     "arm7": {
-      "complete": 4,
+      "complete": 6,
       "total": 6
     },
     "nitrofs": {
@@ -47,7 +47,7 @@
       "real": 36,
       "unresolved": 0
     },
-    "elapsed_s": 12.58,
+    "elapsed_s": 12.04,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -142,7 +142,7 @@
   },
   "readiness": {
     "done": false,
-    "percent": 94.64,
+    "percent": 95.55,
     "areas": [
       {
         "id": "arm9",
@@ -187,14 +187,14 @@
         "title": "ARM7 binary",
         "open": 0,
         "measured": true,
-        "summary": "56,542 of 160,048 B recovered as exact source (35.33%); host-service route 2 of 2 requirements proven",
+        "summary": "58,130 of 160,048 B recovered as exact source (36.32%); host-service route 2 of 2 requirements proven",
         "details": [
-          "72 leaf proofs, 1 linked modules and 185 exact linked fragment groups; unique file-byte union",
-          "source categories: code 53,582 B, data 2,852 B, metadata 24 B, untriaged 84 B",
+          "72 leaf proofs, 1 linked modules and 188 exact linked fragment groups; unique file-byte union",
+          "source categories: code 55,170 B, data 2,852 B, metadata 24 B, untriaged 84 B",
           "typed BSS layout: 1,300 B (separate from retail-file bytes)",
           "closes through exact source for every byte or through the typed ARM7 host-service route (docs/recovery/arm7/HOST_SERVICES.md, tests/arm7/check_host_services.py)"
         ],
-        "done": 56542,
+        "done": 58130,
         "total": 160048,
         "unit": "bytes",
         "closed": true,
@@ -222,7 +222,7 @@
         "measured": true,
         "summary": "5 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD 79e18ce80c5a and dashboard policy",
+          "evidence report matches HEAD 76d47a128614 and dashboard policy",
           "no executable check yet (5): behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison",
           "opcode corpus (tools/check_opcode_corpus.py --usage for real-script coverage): 4 named-refusal, 39 native-fixture, 15 open, 1 structural-only of 59 opcodes",
           "no honest check possible yet (evidence missing, docs/recovery/behavior/open-requirements.md): function-differential/all-recovered-functions: no per-function differential registry or harness over every recovered function; emulator-replays/retail-comparison: no retail emulator replay captures (tools/check_title_checkpoint.py covers one title frame and cannot run here); rendering-screenshots/checkpoint-comparison: no retail checkpoint screenshots in the repository; audio-events/event-trace-comparison: no retail sound-command trace; native effects are mostly refused in the boot"
@@ -236,19 +236,19 @@
       {
         "id": "tasks",
         "title": "Recovery task queues",
-        "open": 2,
+        "open": 0,
         "measured": true,
-        "summary": "2 tasks not complete across arm7, nitrofs, port",
+        "summary": "0 tasks not complete across arm7, nitrofs, port",
         "details": [
-          "arm7: 4/6 complete, 2 ready: arm7-runtime-exact-batch, arm7-sound-exact-batch",
+          "arm7: 6/6 complete, 0 ready",
           "nitrofs: 22/22 complete, 0 ready",
           "port: 9/9 complete, 0 ready"
         ],
-        "done": 35,
+        "done": 37,
         "total": 37,
         "unit": "tasks",
-        "closed": false,
-        "percent": 94.59
+        "closed": true,
+        "percent": 100.0
       }
     ]
   }
