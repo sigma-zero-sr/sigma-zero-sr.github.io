@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "d0f714d35e5b8719a0d1e24d978762f4bd38eda1",
+  "revision": "7d8a0d12197ebf5eba0c63ad281e8d3ef7b0e2c5",
   "census": {
     "passed": 1039,
     "total": 1046,
@@ -47,7 +47,7 @@
       "real": 36,
       "unresolved": 0
     },
-    "elapsed_s": 12.12,
+    "elapsed_s": 12.39,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -142,7 +142,7 @@
   },
   "readiness": {
     "done": false,
-    "percent": 95.76,
+    "percent": 96.95,
     "areas": [
       {
         "id": "arm9",
@@ -219,20 +219,20 @@
       {
         "id": "host-evidence",
         "title": "Portable core and behavioral suites",
-        "open": 5,
+        "open": 3,
         "measured": true,
-        "summary": "5 requirements have no check, 0 fail, 0 unproven",
+        "summary": "3 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD d0f714d35e5b and dashboard policy",
-          "no executable check yet (5): behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/emulator-replays/retail-comparison, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/rendering-screenshots/checkpoint-comparison, behavioral-suite/audio-events/event-trace-comparison",
-          "opcode corpus (tools/check_opcode_corpus.py --usage for real-script coverage): 4 named-refusal, 39 native-fixture, 15 open, 1 structural-only of 59 opcodes",
-          "no honest check possible yet (evidence missing, docs/recovery/behavior/open-requirements.md): function-differential/all-recovered-functions: no per-function differential registry or harness over every recovered function; emulator-replays/retail-comparison: no retail emulator replay captures (tools/check_title_checkpoint.py covers one title frame and cannot run here); rendering-screenshots/checkpoint-comparison: no retail checkpoint screenshots in the repository; audio-events/event-trace-comparison: no retail sound-command trace; native effects are mostly refused in the boot"
+          "evidence report matches HEAD 7d8a0d12197e and dashboard policy",
+          "no executable check yet (3): behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/audio-events/event-trace-comparison",
+          "opcode corpus (tools/check_opcode_corpus.py --usage for real-script coverage): 1 command-registry, 57 native-fixture, 1 structural-only of 59 opcodes",
+          "no honest check possible yet (evidence missing, docs/recovery/behavior/open-requirements.md): function-differential/all-recovered-functions: no per-function differential registry or harness over every recovered function; audio-events/event-trace-comparison: the native boot starts 0 voices for its 28 effect requests and issues no SDK sound command, and the retail PXI stream is not yet decoded into sound commands (docs/recovery/behavior/open-requirements.md)"
         ],
-        "done": 23,
+        "done": 25,
         "total": 28,
         "unit": "requirements",
         "closed": false,
-        "percent": 82.14
+        "percent": 89.29
       },
       {
         "id": "tasks",
