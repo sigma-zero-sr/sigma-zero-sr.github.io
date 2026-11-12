@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "b70fabcdc444d2ae479c050cf9419b985f15e4d0",
+  "revision": "618888ee053b15fcefc7ff5784552a40c6e76be3",
   "census": {
     "passed": 1039,
     "total": 1046,
@@ -47,7 +47,7 @@
       "real": 36,
       "unresolved": 0
     },
-    "elapsed_s": 12.03,
+    "elapsed_s": 11.99,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -142,31 +142,30 @@
   },
   "readiness": {
     "done": false,
-    "percent": 97.56,
+    "percent": 98.21,
     "areas": [
       {
         "id": "arm9",
         "title": "ARM9 retail reconstruction",
-        "open": 4,
+        "open": 0,
         "measured": true,
-        "summary": "96.04% of code closed for the port (91 functions host-replaced, 58 proven not applicable on host, 4 on the near-miss allowlist, 2 proven by differential test), 4 TUs open",
+        "summary": "100.00% of code closed for the port (91 functions host-replaced, 58 proven not applicable on host, 4 on the near-miss allowlist, 6 proven by differential test), 0 TUs open",
         "details": [
           "source-linked (complete TUs): 547,896 of 623,382 B (87.89%)",
           "code not exact: 39,226 B in 159 functions",
-          "exact semantic code in TUs still open: 12,724 B",
+          "exact semantic code in TUs still open: 0 B",
           "host-replaced asm_walls functions: 91 (15,690 B)",
           "proven not applicable on host (tools/host_not_applicable.py): 58 (3,024 B)",
           "audited near-miss allowlist (tools/near_miss_allowlist.py): 4 (4,788 B)",
-          "differential proof (tools/function_differential.py): 2 (3,792 B)",
-          "TUs open for the port: 4",
-          "largest open TUs (B not covered): src/game/snd_02005f04 (5,392 B), src/game/postccarry_53bec (3,388 B), src/game/gap1a (2,696 B), src/game/ccarryitem_i (456 B)",
+          "differential proof (tools/function_differential.py): 6 (15,724 B)",
+          "TUs open for the port: 0",
           "inline-asm bodies: 27 in 13 source files; .s files: 6 (src/core/sdk_overlay_digest.s, src/game/game_rodata.s, src/game/game_rodata_slow_entry.s, src/game/game_rodata_synthesis.s, src/game/game_rodata_tail.s, src/os/os_protection_unit.s)"
         ],
-        "done": 598726,
+        "done": 623382,
         "total": 623382,
         "unit": "bytes",
-        "closed": false,
-        "percent": 96.04
+        "closed": true,
+        "percent": 100.0
       },
       {
         "id": "binary-regions",
@@ -224,10 +223,10 @@
         "measured": true,
         "summary": "3 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD b70fabcdc444 and dashboard policy",
+          "evidence report matches HEAD 618888ee053b and dashboard policy",
           "no executable check yet (3): behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/audio-events/event-trace-comparison",
           "opcode corpus (tools/check_opcode_corpus.py --usage for real-script coverage): 1 command-registry, 57 native-fixture, 1 structural-only of 59 opcodes",
-          "no honest check possible yet (evidence missing, docs/recovery/behavior/open-requirements.md): function-differential/all-recovered-functions: the per-function differential harness and registry exist (docs/recovery/portability/FUNCTION_DIFFERENTIAL.md) but cover only a few recovered functions; tools/check_function_differential.py --require-all fails until every recovered function has a case; audio-events/event-trace-comparison: the native boot starts 0 voices for its 28 effect requests and issues no SDK sound command, and the retail PXI stream is not yet decoded into sound commands (docs/recovery/behavior/open-requirements.md)"
+          "no honest check possible yet (evidence missing, docs/recovery/behavior/open-requirements.md): function-differential/all-recovered-functions: scoped by the owner (2026-11-12) to the risk set of tools/function_risk_set.py: every function not proven by a byte-exact match; tools/check_function_differential.py --risk-set fails until each has a passing differential case (docs/recovery/portability/FUNCTION_DIFFERENTIAL.md); audio-events/event-trace-comparison: the native boot starts 0 voices for its 28 effect requests and issues no SDK sound command, and the retail PXI stream is not yet decoded into sound commands (docs/recovery/behavior/open-requirements.md)"
         ],
         "done": 25,
         "total": 28,
