@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "adc464bf87e4678f4e99f6b3cb35e0eb63da8dae",
+  "revision": "2d841b70c7e5a466e7400909cb6c72d12c31bfe2",
   "census": {
     "passed": 1039,
     "total": 1046,
@@ -47,7 +47,7 @@
       "real": 36,
       "unresolved": 0
     },
-    "elapsed_s": 12.01,
+    "elapsed_s": 11.95,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -158,6 +158,7 @@
           "proven not applicable on host (tools/host_not_applicable.py): 58 (3,024 B)",
           "audited near-miss allowlist (tools/near_miss_allowlist.py): 4 (4,788 B)",
           "TUs open for the port: 7",
+          "registered replacements not proven (1): func_0205336c (novel-view-history-lifecycle: ctest epu_recovered_prefix is not registered in the default host configuration)",
           "largest open TUs (B not covered): src/game/snd_02005f04 (5,392 B), src/game/postccarry_53bec (3,388 B), src/game/gap1a (2,696 B), src/game/func_02011584 (2,448 B), src/game/func_0201400c (1,344 B)",
           "inline-asm bodies: 27 in 13 source files; .s files: 6 (src/core/sdk_overlay_digest.s, src/game/game_rodata.s, src/game/game_rodata_slow_entry.s, src/game/game_rodata_synthesis.s, src/game/game_rodata_tail.s, src/os/os_protection_unit.s)"
         ],
@@ -223,7 +224,7 @@
         "measured": true,
         "summary": "3 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD adc464bf87e4 and dashboard policy",
+          "evidence report matches HEAD 2d841b70c7e5 and dashboard policy",
           "no executable check yet (3): behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/audio-events/event-trace-comparison",
           "opcode corpus (tools/check_opcode_corpus.py --usage for real-script coverage): 1 command-registry, 57 native-fixture, 1 structural-only of 59 opcodes",
           "no honest check possible yet (evidence missing, docs/recovery/behavior/open-requirements.md): function-differential/all-recovered-functions: no per-function differential registry or harness over every recovered function; audio-events/event-trace-comparison: the native boot starts 0 voices for its 28 effect requests and issues no SDK sound command, and the retail PXI stream is not yet decoded into sound commands (docs/recovery/behavior/open-requirements.md)"
