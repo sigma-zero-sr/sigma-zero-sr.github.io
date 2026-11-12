@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "0ee8574eb0dfd7b9a18cd57b13f4f884ebf57f75",
+  "revision": "631e2bc3659efe55ed33ed0be0a5c394a295d7cb",
   "census": {
     "passed": 1039,
     "total": 1046,
@@ -47,7 +47,7 @@
       "real": 36,
       "unresolved": 0
     },
-    "elapsed_s": 12.1,
+    "elapsed_s": 11.96,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -142,30 +142,31 @@
   },
   "readiness": {
     "done": false,
-    "percent": 96.95,
+    "percent": 97.45,
     "areas": [
       {
         "id": "arm9",
         "title": "ARM9 retail reconstruction",
-        "open": 12,
+        "open": 8,
         "measured": true,
-        "summary": "92.42% of code closed for the port (87 functions host-replaced, 58 proven not applicable on host), 12 TUs open",
+        "summary": "95.42% of code closed for the port (87 functions host-replaced, 58 proven not applicable on host, 4 on the near-miss allowlist), 8 TUs open",
         "details": [
           "source-linked (complete TUs): 547,896 of 623,382 B (87.89%)",
           "code not exact: 39,226 B in 159 functions",
-          "exact semantic code in TUs still open: 26,680 B",
+          "exact semantic code in TUs still open: 12,724 B",
           "host-replaced asm_walls functions: 87 (15,626 B)",
           "proven not applicable on host (tools/host_not_applicable.py): 58 (3,024 B)",
-          "TUs open for the port: 12",
+          "audited near-miss allowlist (tools/near_miss_allowlist.py): 4 (4,788 B)",
+          "TUs open for the port: 8",
           "registered replacements not proven (1): func_0204dd48 (room-chara-listener-query: ctest room_chara_listener_query is not registered in the default host configuration)",
-          "largest open TUs (B not covered): src/game/snd_02005f04 (5,392 B), src/game/postccarry_53bec (3,388 B), src/game/gap1a (2,696 B), src/game/func_02011584 (2,448 B), src/game/gap1e (2,240 B)",
+          "largest open TUs (B not covered): src/game/snd_02005f04 (5,392 B), src/game/postccarry_53bec (3,388 B), src/game/gap1a (2,696 B), src/game/func_02011584 (2,448 B), src/game/func_0201400c (1,344 B)",
           "inline-asm bodies: 27 in 13 source files; .s files: 6 (src/core/sdk_overlay_digest.s, src/game/game_rodata.s, src/game/game_rodata_slow_entry.s, src/game/game_rodata_synthesis.s, src/game/game_rodata_tail.s, src/os/os_protection_unit.s)"
         ],
-        "done": 576110,
+        "done": 594854,
         "total": 623382,
         "unit": "bytes",
         "closed": false,
-        "percent": 92.42
+        "percent": 95.42
       },
       {
         "id": "binary-regions",
@@ -223,7 +224,7 @@
         "measured": true,
         "summary": "3 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD 0ee8574eb0df and dashboard policy",
+          "evidence report matches HEAD 631e2bc3659e and dashboard policy",
           "no executable check yet (3): behavioral-suite/function-differential/all-recovered-functions, behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/audio-events/event-trace-comparison",
           "opcode corpus (tools/check_opcode_corpus.py --usage for real-script coverage): 1 command-registry, 57 native-fixture, 1 structural-only of 59 opcodes",
           "no honest check possible yet (evidence missing, docs/recovery/behavior/open-requirements.md): function-differential/all-recovered-functions: no per-function differential registry or harness over every recovered function; audio-events/event-trace-comparison: the native boot starts 0 voices for its 28 effect requests and issues no SDK sound command, and the retail PXI stream is not yet decoded into sound commands (docs/recovery/behavior/open-requirements.md)"
