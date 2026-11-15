@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "e5d31bd513e8b3fbbd24234f58c3989f4b5bbeb9",
+  "revision": "010b257fbdaf80ba1fa22b7f19a3aab392d0e793",
   "census": {
     "passed": 1039,
     "total": 1046,
@@ -47,7 +47,7 @@
       "real": 36,
       "unresolved": 0
     },
-    "elapsed_s": 11.97,
+    "elapsed_s": 12.15,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -223,7 +223,7 @@
         "measured": true,
         "summary": "2 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD e5d31bd513e8 and dashboard policy",
+          "evidence report matches HEAD 010b257fbdaf and dashboard policy",
           "no executable check yet (2): behavioral-suite/vm-instructions/opcode-corpus, behavioral-suite/audio-events/event-trace-comparison",
           "opcode corpus (tools/check_opcode_corpus.py --usage for real-script coverage): 1 command-registry, 57 native-fixture, 1 structural-only of 59 opcodes",
           "no honest check possible yet (evidence missing, docs/recovery/behavior/open-requirements.md): audio-events/event-trace-comparison: the native boot starts 0 voices for its 28 effect requests and issues no SDK sound command, and the retail PXI stream is not yet decoded into sound commands (docs/recovery/behavior/open-requirements.md)"
