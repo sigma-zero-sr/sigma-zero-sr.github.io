@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "a8833c5c86b50e6c6413025683c7e373e4dc0843",
+  "revision": "68e7682c1b388719a7629841d8ab734b916459d2",
   "census": {
     "passed": 1039,
     "total": 1046,
@@ -41,13 +41,13 @@
     "undefined_names": 0,
     "stubs": {
       "registered": 1694,
-      "generated": 1658,
-      "generated_functions": 192,
+      "generated": 1657,
+      "generated_functions": 191,
       "generated_data": 1466,
-      "real": 36,
+      "real": 37,
       "unresolved": 0
     },
-    "elapsed_s": 12.02,
+    "elapsed_s": 11.97,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -141,8 +141,8 @@
     "frames_reported": true
   },
   "readiness": {
-    "done": false,
-    "percent": 99.4,
+    "done": true,
+    "percent": 100.0,
     "areas": [
       {
         "id": "arm9",
@@ -159,7 +159,8 @@
           "audited near-miss allowlist (tools/near_miss_allowlist.py): 4 (4,788 B)",
           "differential proof (tools/function_differential.py): 6 (15,724 B)",
           "TUs open for the port: 0",
-          "inline-asm bodies: 27 in 13 source files; .s files: 6 (src/core/sdk_overlay_digest.s, src/game/game_rodata.s, src/game/game_rodata_slow_entry.s, src/game/game_rodata_synthesis.s, src/game/game_rodata_tail.s, src/os/os_protection_unit.s)"
+          "inline-asm bodies: 27 in 13 source files; .s files: 6 (src/core/sdk_overlay_digest.s, src/game/game_rodata.s, src/game/game_rodata_slow_entry.s, src/game/game_rodata_synthesis.s, src/game/game_rodata_tail.s, src/os/os_protection_unit.s)",
+          "boot-stub-shadowed (informational): link not checked (no built nine_hours found); 6 claimed symbols also have a weak boot stub: MIi_CpuClearFast, MIi_CpuCopyFast, MTX_Identity22_, OS_DisableInterrupts, OS_RestoreInterrupts, _u32_div_f"
         ],
         "done": 623382,
         "total": 623382,
@@ -219,19 +220,17 @@
       {
         "id": "host-evidence",
         "title": "Portable core and behavioral suites",
-        "open": 1,
+        "open": 0,
         "measured": true,
-        "summary": "1 requirements have no check, 0 fail, 0 unproven",
+        "summary": "0 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD a8833c5c86b5 and dashboard policy",
-          "no executable check yet (1): behavioral-suite/vm-instructions/opcode-corpus",
-          "opcode corpus (tools/check_opcode_corpus.py --usage for real-script coverage): 1 command-registry, 57 native-fixture, 1 structural-only of 59 opcodes"
+          "evidence report matches HEAD 68e7682c1b38 and dashboard policy"
         ],
-        "done": 27,
+        "done": 28,
         "total": 28,
         "unit": "requirements",
-        "closed": false,
-        "percent": 96.43
+        "closed": true,
+        "percent": 100.0
       },
       {
         "id": "tasks",
