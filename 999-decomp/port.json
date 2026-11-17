@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "68e7682c1b388719a7629841d8ab734b916459d2",
+  "revision": "2f44bb404db8f47e42c8b6284d9c5ef73a80ef0d",
   "census": {
     "passed": 1039,
     "total": 1046,
@@ -41,13 +41,13 @@
     "undefined_names": 0,
     "stubs": {
       "registered": 1694,
-      "generated": 1657,
-      "generated_functions": 191,
+      "generated": 1655,
+      "generated_functions": 189,
       "generated_data": 1466,
-      "real": 37,
+      "real": 39,
       "unresolved": 0
     },
-    "elapsed_s": 11.97,
+    "elapsed_s": 12.03,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -141,8 +141,8 @@
     "frames_reported": true
   },
   "readiness": {
-    "done": true,
-    "percent": 100.0,
+    "done": false,
+    "percent": 92.86,
     "areas": [
       {
         "id": "arm9",
@@ -159,8 +159,7 @@
           "audited near-miss allowlist (tools/near_miss_allowlist.py): 4 (4,788 B)",
           "differential proof (tools/function_differential.py): 6 (15,724 B)",
           "TUs open for the port: 0",
-          "inline-asm bodies: 27 in 13 source files; .s files: 6 (src/core/sdk_overlay_digest.s, src/game/game_rodata.s, src/game/game_rodata_slow_entry.s, src/game/game_rodata_synthesis.s, src/game/game_rodata_tail.s, src/os/os_protection_unit.s)",
-          "boot-stub-shadowed (informational): link not checked (no built nine_hours found); 6 claimed symbols also have a weak boot stub: MIi_CpuClearFast, MIi_CpuCopyFast, MTX_Identity22_, OS_DisableInterrupts, OS_RestoreInterrupts, _u32_div_f"
+          "inline-asm bodies: 27 in 13 source files; .s files: 6 (src/core/sdk_overlay_digest.s, src/game/game_rodata.s, src/game/game_rodata_slow_entry.s, src/game/game_rodata_synthesis.s, src/game/game_rodata_tail.s, src/os/os_protection_unit.s)"
         ],
         "done": 623382,
         "total": 623382,
@@ -183,6 +182,26 @@
         "unit": "regions",
         "closed": true,
         "percent": 100.0
+      },
+      {
+        "id": "shipped-link",
+        "title": "Shipped link provider selection",
+        "open": 3,
+        "measured": true,
+        "summary": "3 claimed host replacements are not what the shipped game links",
+        "details": [
+          "binary: build/port-boot/nine_hours",
+          "3 claimed symbols resolve to the weak boot stub: MIi_CpuClearFast, MIi_CpuCopyFast, _u32_div_f; 3 have the strong provider, 0 are not linked",
+          "10 symbols guarded by shipped_link_symbols.json",
+          "MIi_CpuClearFast: weak boot stub in the shipped link",
+          "MIi_CpuCopyFast: weak boot stub in the shipped link",
+          "_u32_div_f: weak boot stub in the shipped link"
+        ],
+        "done": 3,
+        "total": 6,
+        "unit": "symbols",
+        "closed": false,
+        "percent": 50.0
       },
       {
         "id": "arm7",
@@ -224,7 +243,7 @@
         "measured": true,
         "summary": "0 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD 68e7682c1b38 and dashboard policy"
+          "evidence report matches HEAD 2f44bb404db8 and dashboard policy"
         ],
         "done": 28,
         "total": 28,
