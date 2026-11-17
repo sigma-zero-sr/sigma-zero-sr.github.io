@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "1e6e6fe5d8fdef60b77baff1e945faa3eebd2f0f",
+  "revision": "0863bce1f2d9ae106da66df2ec1d35b49d9e85c6",
   "census": {
     "passed": 1039,
     "total": 1046,
@@ -47,7 +47,7 @@
       "real": 39,
       "unresolved": 0
     },
-    "elapsed_s": 12.13,
+    "elapsed_s": 12.03,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -142,7 +142,7 @@
   },
   "readiness": {
     "done": false,
-    "percent": 95.24,
+    "percent": 92.86,
     "areas": [
       {
         "id": "arm9",
@@ -186,21 +186,22 @@
       {
         "id": "shipped-link",
         "title": "Shipped link provider selection",
-        "open": 2,
+        "open": 3,
         "measured": true,
-        "summary": "2 claimed host replacements are not what the shipped game links",
+        "summary": "3 claimed host replacements are not what the shipped game links",
         "details": [
           "binary: build/port-boot/nine_hours",
-          "2 claimed symbols resolve to the weak boot stub: MIi_CpuClearFast, MIi_CpuCopyFast; 4 have the strong provider, 0 are not linked",
+          "3 claimed symbols resolve to the weak boot stub: MIi_CpuClearFast, MIi_CpuCopyFast, _u32_div_f; 3 have the strong provider, 0 are not linked",
           "10 symbols guarded by shipped_link_symbols.json",
           "MIi_CpuClearFast: weak boot stub in the shipped link",
-          "MIi_CpuCopyFast: weak boot stub in the shipped link"
+          "MIi_CpuCopyFast: weak boot stub in the shipped link",
+          "_u32_div_f: weak boot stub in the shipped link"
         ],
-        "done": 4,
+        "done": 3,
         "total": 6,
         "unit": "symbols",
         "closed": false,
-        "percent": 66.67
+        "percent": 50.0
       },
       {
         "id": "arm7",
@@ -242,7 +243,7 @@
         "measured": true,
         "summary": "0 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD 1e6e6fe5d8fd and dashboard policy"
+          "evidence report matches HEAD 0863bce1f2d9 and dashboard policy"
         ],
         "done": 28,
         "total": 28,
