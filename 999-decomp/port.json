@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "d0e4a4652117fecc0b518744029ddbcd19db5632",
+  "revision": "e6477e332fd51c23b7a525105bdc2ce4479326c2",
   "census": {
     "passed": 1039,
     "total": 1046,
@@ -47,7 +47,7 @@
       "real": 39,
       "unresolved": 0
     },
-    "elapsed_s": 11.99,
+    "elapsed_s": 11.97,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -141,8 +141,8 @@
     "frames_reported": true
   },
   "readiness": {
-    "done": false,
-    "percent": 85.71,
+    "done": true,
+    "percent": 100.0,
     "areas": [
       {
         "id": "arm9",
@@ -186,17 +186,19 @@
       {
         "id": "shipped-link",
         "title": "Shipped link provider selection",
-        "open": 1,
-        "measured": false,
-        "summary": "not measured: no built nine_hours found; 6 claimed symbols also have a weak boot stub",
+        "open": 0,
+        "measured": true,
+        "summary": "every claimed replacement with a boot stub is the strong provider in build/port-boot/nine_hours",
         "details": [
-          "claimed symbols with a weak boot stub: MIi_CpuClearFast, MIi_CpuCopyFast, MTX_Identity22_, OS_DisableInterrupts, OS_RestoreInterrupts, _u32_div_f"
+          "binary: build/port-boot/nine_hours",
+          "0 claimed symbols resolve to the weak boot stub: none; 6 have the strong provider, 0 are not linked",
+          "10 symbols guarded by shipped_link_symbols.json"
         ],
-        "done": 0,
-        "total": 0,
-        "unit": "",
-        "closed": false,
-        "percent": 0.0
+        "done": 6,
+        "total": 6,
+        "unit": "symbols",
+        "closed": true,
+        "percent": 100.0
       },
       {
         "id": "arm7",
@@ -238,7 +240,7 @@
         "measured": true,
         "summary": "0 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD d0e4a4652117 and dashboard policy"
+          "evidence report matches HEAD e6477e332fd5 and dashboard policy"
         ],
         "done": 28,
         "total": 28,
