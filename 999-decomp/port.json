@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "1c107ee6fb1f54387a9c563e5e0c7b3cff919999",
+  "revision": "b32b4f47a4713aaa6a712cf705a829ed972ddf09",
   "census": {
     "passed": 1039,
     "total": 1046,
@@ -241,7 +241,7 @@
         "measured": true,
         "summary": "0 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD 1c107ee6fb1f and dashboard policy"
+          "evidence report matches HEAD b32b4f47a471 and dashboard policy"
         ],
         "done": 28,
         "total": 28,
