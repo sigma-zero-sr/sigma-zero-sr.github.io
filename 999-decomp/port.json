@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "179f12d35ac0dec3dddc6f5f85c9bb0b8d2b7593",
+  "revision": "22fc048fdaa5874282b18c884619f517b4014d98",
   "census": {
     "passed": 1039,
     "total": 1046,
@@ -47,7 +47,7 @@
       "real": 39,
       "unresolved": 0
     },
-    "elapsed_s": 11.99,
+    "elapsed_s": 11.98,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -241,7 +241,7 @@
         "measured": true,
         "summary": "0 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD 179f12d35ac0 and dashboard policy"
+          "evidence report matches HEAD 22fc048fdaa5 and dashboard policy"
         ],
         "done": 28,
         "total": 28,
@@ -269,16 +269,17 @@
       {
         "id": "playable",
         "title": "Playable routes",
-        "open": 79,
+        "open": 73,
         "measured": true,
-        "summary": "0 of 78 story scripts played to the end of their script-level flows with zero refusals; System.Exit never seen",
+        "summary": "0 of 72 story scripts played to the end of their script-level flows with zero refusals; System.Exit never seen",
         "details": [
-          "4 of 78 story scripts were reached at all by a verified recorded trace",
+          "4 of 72 story scripts were reached at all by a verified recorded trace",
           "System.Exit has not run in any qualifying recorded trace (counted as one open item)",
+          "6 scripts exempt (no player input enters them, proved by tools/debug_only_scripts.py): debug, op, test2, test3, test4, test5",
           "receipt opening-accept-57600 (source_head b7b14769c2cf): does not qualify; no refusal record (recorded before refusals were captured): unmeasured"
         ],
         "done": 0,
-        "total": 78,
+        "total": 72,
         "unit": "story scripts",
         "closed": false,
         "percent": 0.0
