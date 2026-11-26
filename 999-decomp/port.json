@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "revision": "2a3a49880ad32c8c3c463e833f5547e0cb103d63",
+  "revision": "f16b508b52403366cc4c26860a46a6529a957bec",
   "census": {
     "passed": 1039,
     "total": 1046,
@@ -47,7 +47,7 @@
       "real": 39,
       "unresolved": 0
     },
-    "elapsed_s": 13.18,
+    "elapsed_s": 12.03,
     "outcome": "returned",
     "milestones": [
       "reset",
@@ -241,7 +241,7 @@
         "measured": true,
         "summary": "0 requirements have no check, 0 fail, 0 unproven",
         "details": [
-          "evidence report matches HEAD 2a3a49880ad3 and dashboard policy"
+          "evidence report matches HEAD f16b508b5240 and dashboard policy"
         ],
         "done": 28,
         "total": 28,
